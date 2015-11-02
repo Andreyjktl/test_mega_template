@@ -1,0 +1,52 @@
+div.auth a.signin span, div.auth a.logout span {
+	background-position: 0 1px;
+}
+input.text1 {
+	padding-bottom: 4px;
+	border-radius: 4px;
+}
+input.text2 {
+	padding-bottom: 5px;
+	border-radius: 4px;
+}
+textarea {
+	padding-bottom: 4px;
+	border-radius: 4px;
+}
+button.button1, input.button1, a.button1 {
+	border-radius: 4px;
+}
+button.button1 span, span.button1-span input, a.button1 span {
+	padding-top: 2px;
+	padding-bottom: 1px;
+	border-radius: 2px;
+}
+button.button2 {
+	border-radius: 4px;
+}
+button.button2 span {
+	border-radius: 2px;
+}
+button.button3 {
+	border-radius: 4px;
+}
+button.button3 span {
+	padding-top: 2px;
+	padding-bottom: 1px;
+	border-radius: 2px;
+}
+button.button4, input.button4 {
+	border-radius: 4px;
+}
+button.button4 span, span.button4-span input {
+	padding-top: 2px;
+	border-radius: 2px;
+}
+/*
+div.search div.button button {
+	border-radius: 1px;
+}
+div.search div.button button span {
+	border-radius: 1px;
+}
+*/

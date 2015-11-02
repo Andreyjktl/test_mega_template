@@ -1,0 +1,41 @@
+ol { padding-left: 25px; }
+hr { border: none; zoom: 1; }
+label input { width: 16px; height: 16px; top: 0px; }
+nav ul li span { float: left; }
+nav ul li a span { cursor: pointer; }
+button { zoom: 1; overflow: visible; position: relative; }
+button span { zoom: 1; white-space: nowrap; position: relative; left: -2px; margin: -1px -3px -2px 1px; padding-left: 8px !important; padding-right: 8px !important; }
+button.button4 span { margin-bottom: -3px; }
+div.auth ul li span { float: left; }
+div.auth ul li a span { cursor: pointer; }
+div.submenu2 div.table { display: block; }
+div.submenu2 ul { float: left !important; clear: right; }
+div.full { zoom: 1; }
+div.bottom-block { zoom: 1; }
+div.bottom-block ul { position: relative; }
+div.promo { zoom: 1; }
+div.filter { zoom: 1; }
+div.search div.button { padding-top: 1px; }
+div.hr { margin-left: -40px; margin-right: -40px; }
+div.hr hr { text-align: center; }
+div.events { margin-bottom: -33px; }
+div.mode { width: 100%; }
+div.photos ul li { padding: 0 40px 40px 0; margin: 0; }
+span.green { height: 31px; padding-top: 13px; }
+span.red { height: 31px; padding-top: 13px; }
+div.form div.field p { display: inline; }
+table.cart tr td.number { padding-top: 7px; padding-bottom: 9px; }
+table.cart tr td.number span { position: relative; top: -3px; }
+div.total { zoom: 1; }
+div.cart div.buttons { zoom: 1; }
+div.cart div.buttons button span { left: 0; }
+span.rubl span.line1 { display: none; }
+span.rubl span.line2 { display: none; }
+div.menu span { border: none; padding: 8px 21px 10px 21px; }
+div.filter div.top h4 { border: none; padding: 6px 23px 5px 23px; }
+div.filter div.top ul li.selected h4 { padding-bottom: 6px; }
+ul.tabs li span { border: none; padding: 5px 25px 5px 25px; }
+div.inverse { margin-bottom: 0; }
+div.inverse ul.tabs li span { border: none; padding-top: 5px; padding-bottom: 5px; }
+div.inverse ul.tabs li.selected span { padding-top: 6px; }
+div.inverse ul.tabs li.selected-last { border-right: none; padding-right: 1px; }

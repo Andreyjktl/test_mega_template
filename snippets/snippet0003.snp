@@ -1,0 +1,17 @@
+<!--noindex-->
+<table class="selectors" width="100%" cellpadding="3" cellspacing="0" border="0">
+<tr>
+ <td align="left">
+      <a<?if($sort=="price_desc") :?> style="font-weight:bold"<?endif?> href="<?=$APPLICATION->GetCurPageParam("sort=price_desc", Array("view", "sort") )?>" rel="nofollow">По цене вниз</a> / 
+      <a<?if($sort=="price_asc") :?> style="font-weight:bold"<?endif?> href="<?=$APPLICATION->GetCurPageParam("sort=price_asc", Array("view", "sort") )?>" rel="nofollow">по цене вверх</a> / 
+      <a<?if($sort=="sort_asc") :?> style="font-weight:bold"<?endif?> href="<?=$APPLICATION->GetCurPageParam("sort=sort_asc", Array("view", "sort") )?>" rel="nofollow">по порядку</a>
+   </td>
+   <td align="right">
+      <a<?if($view=="mega_filter_result") :?> style="font-weight:bold"<?endif?> href="<?=$APPLICATION->GetCurPageParam("view=mega_filter_result", Array("view", "sort") )?>" rel="nofollow">Детально</a> /
+      <a<?if($view=="mega_list") :?> style="font-weight:bold"<?endif?> href="<?=$APPLICATION->GetCurPageParam("view=mega_list", Array("view", "sort") )?>" rel="nofollow">Список</a> 
+      
+   </td>
+
+</tr>
+</table>
+<!--/noindex-->

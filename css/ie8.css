@@ -1,0 +1,9 @@
+select { height: auto; padding-top: 1px; padding-bottom: 2px; }
+table.list tr td { line-height: 1.3em; }
+div.menu span { border: none; padding: 8px 21px 10px 21px; }
+div.filter div.top h4 { border: none; padding: 6px 23px 5px 23px; }
+div.filter div.top ul li.selected h4 { padding-bottom: 6px; }
+ul.tabs li span { border: none; padding: 6px 25px 4px 25px; }
+div.inverse ul.tabs li span { border: none; padding-top: 6px; padding-bottom: 4px; }
+div.inverse ul.tabs li.selected span { padding-top: 7px; }
+div.inverse ul.tabs li.selected-last { border-right: none; padding-right: 1px; }

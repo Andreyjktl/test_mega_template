@@ -1,0 +1,140 @@
+a:link, a:visited, a:hover {
+	color: #0085c1;
+}
+a:hover {
+	color: #0085c1;
+}
+
+
+/* Form Template: Success Message */
+div.success-msg {
+	border-color: #0099cc;
+}
+
+
+/* Form Elements: .button2 */
+button.button2, span.button2-span {
+	border-color: #0087b8;
+	border-bottom-color: #0070a2;
+}
+button.button2 span, span.button2-span input {
+	border-color: #1ea7e4;
+	border-bottom-color: #008fce;
+	background: #007ab0 url(./images/button2.gif) repeat-x 0 0;
+}
+
+
+/* Form Elements: .button4 */
+button.button4, span.button4-span {
+	border-color: #0087b8;
+	border-bottom-color: #0070a2;
+}
+button.button4 span, span.button4-span input {
+	    border-color: #0085C8;
+    border-bottom-color: #0085C8;
+    background: #0085C8;
+
+	/* 
+	border-color: #1ea7e4;
+	border-bottom-color: #008fce;
+	background: #007ab0 url(./images/button4.gif) repeat-x 0 0;
+	*/
+}
+
+
+/* Header */ /*url(./images/header.gif) repeat-x 0 0*/
+div.top-block {
+
+}
+
+
+/* Panel *//* url(./images/panel.gif) repeat-x 0 0 */
+div.panel {
+	background: #FFFFFF;
+    border-color: #bebebe;
+    border-top-color: #0085C8;
+    border-bottom-color: #0F85C1;
+    /* background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); */
+}
+
+
+/* Menu */
+div.menu a {
+	border-color: #bebebe;
+	border-top-color: #bebebe;
+}
+
+
+/* Submenu2 */
+div.submenu2 ul li a {
+	color: #0085c1;
+}
+div.submenu2 ul li span {
+	color: #0085c1 !important;
+}
+
+
+/* Bottom Block url(./images/footer.gif) repeat-x 0 0 */
+div.bottom-block {
+
+	border-top-color: #bebebe;
+	border-bottom-color: #bebebe;
+	/*background: #302a36 url('./images/gray-pattern2.png');*/
+
+}
+div.bottom-block div.brd {
+	border-top-color: #bebebe;
+	border-bottom-color: #bebebe;
+}
+footer div.shop {
+	border-right-color: #bebebe;
+}
+footer div.addr {
+	border-left-color: #bebebe;
+}
+
+
+/* Filter Tabs */
+div.filter div.top ul li.selected {
+	background: #EDF6FC;
+    border-color: #EDF6FC;
+    border-bottom-color: #EDF6FC;
+}
+
+
+/* Filter Params */
+div.filter div.bottom {
+	border-bottom-color: #00689c;
+}
+div.filter div.bottom div.brd {
+	border-top-color: #0099cc;
+	border-bottom-color: #0099cc;
+	background: #0075b0;
+}
+div.filter div.params {
+border-right-color: #0070a9; */
+    border: 0px solid #0F85C1;
+    background: #edf6fc;
+}
+
+
+/* Filter Banner */
+div.filter div.banner {
+	background: #0075b0;
+	border-left-color: #0099cc;
+}
+
+
+/* Brands */
+div.brands a.lnk:hover {
+	border-color: #0099cc;
+}
+
+
+/* List Table */
+table.list tr th {
+	background: #d1dadf;
+}
+table.list tr td {
+	border-bottom-color: #d1dadf;
+}
