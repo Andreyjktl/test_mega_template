@@ -34,7 +34,7 @@
 		</div>
 
 		<div class="top_nav">
-		<div style="width:937px; margin:auto;">
+		<div style="    min-width: 937px; width: 85%; margin: auto;">
 
 		<!-- Navigation -->
 
@@ -72,7 +72,7 @@
 			<div class="bg_nav"></div>
 				<!-- Top Block -->
 				<div class="top-block">
-				<div style="width:937px; margin:auto;">
+				<div style="    min-width: 937px;    width: 85%;    margin: auto;">
 
 					<div class="logo">
 						<?if (CSite::InDir(SITE_DIR.'index.php')) {?>
@@ -87,12 +87,29 @@
 						</p>
 					</div>
 
-					<div class="sections">
-
-					<div class="section">
-					<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/top2.php"), false);?>
-
+					<div style="float:left; width: 35%;  padding-top: 10px;">
+					<?$APPLICATION->IncludeComponent("bitrix:search.title", "visual1", array(
+							"NUM_CATEGORIES" => "1",
+							"TOP_COUNT" => "5",
+							"ORDER" => "date",
+							"USE_LANGUAGE_GUESS" => "Y",
+							"CHECK_DATES" => "N",
+							"SHOW_OTHERS" => "N",
+							"PAGE" => SITE_DIR."search/",
+							"CATEGORY_0_TITLE" => GetMessage("SEARCH_GOODS"),
+							"CATEGORY_0" => array(
+								0 => "no",
+							),
+							"SHOW_INPUT" => "Y",
+							"INPUT_ID" => "title-search-input",
+							"CONTAINER_ID" => "search"
+							),
+							false
+						);?>
 						</div>
+
+
+					<div class="sections">
 
 						<div class="section">
 							<div class="phone">
@@ -100,7 +117,6 @@
 									<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/telephone.php"), false);?>
 								</p>
 								<p>
-									<?// TODO: callback //$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/callback.php"), false);?>
 									<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/schedule.php"), false);?>
 								</p>
 							</div>
@@ -185,28 +201,13 @@
 
 								<li><a href="<?=SITE_DIR?>news/"><span>Новости</span></a></li>
 								<li><a href="<?=SITE_DIR?>articles/"><span>Статьи</span></a></li>
+								<li><a href="<?=SITE_DIR?>e-store/"><span>Покупателю</span></a></li>
+								<li><a href="<?=SITE_DIR?>contacts/"><span>Контакты</span></a></li>
 								<?/*<li><a href="<?=SITE_DIR?>contacts/"><span>Контакты</span></a></li>*/?>
 							</ul>
 						</div>
 
-						<?$APPLICATION->IncludeComponent("bitrix:search.title", "visual1", array(
-							"NUM_CATEGORIES" => "1",
-							"TOP_COUNT" => "5",
-							"ORDER" => "date",
-							"USE_LANGUAGE_GUESS" => "Y",
-							"CHECK_DATES" => "N",
-							"SHOW_OTHERS" => "N",
-							"PAGE" => SITE_DIR."search/",
-							"CATEGORY_0_TITLE" => GetMessage("SEARCH_GOODS"),
-							"CATEGORY_0" => array(
-								0 => "no",
-							),
-							"SHOW_INPUT" => "Y",
-							"INPUT_ID" => "title-search-input",
-							"CONTAINER_ID" => "search"
-							),
-							false
-						);?>
+						
 					</div>
 						<div class="clear"></div>
 					</div>

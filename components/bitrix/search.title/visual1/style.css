@@ -1,9 +1,9 @@
 .bx_search_container{
-	height: 30px;
+    height: 30px;
     line-height: 30px;
     padding-top: 8px;
-    margin-left: 60%;
-    width: 40%;
+    /* margin-left: 60%; */
+    /* width: 40%; */
 }
 
 .bx_search_container .bx_field{

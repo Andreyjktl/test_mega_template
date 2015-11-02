@@ -11,7 +11,7 @@ $MESS['TSB1_WORD_OBNOVL_END2'] = "ов";
 $MESS['TSB1_WORD_OBNOVL_END3'] = "";
 $MESS['TSB1_WORD_OBNOVL_END4'] = "а";
 
-$MESS['DVS_INCART'] = 'В вашей корзине';
+$MESS['DVS_INCART'] = 'Корзина';
 $MESS['DVS_EMPTY'] = 'пока пусто';
 $MESS['DVS_ITEM'] = 'товар';
 $MESS['DVS_SUMM'] = 'на сумму';

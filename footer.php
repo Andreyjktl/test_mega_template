@@ -11,8 +11,14 @@
                 <!-- Bottom Block -->
                 <div class="clear:both;"></div>
 
+                	<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/payment_post_bricks.php"), false);?>
+				
+
+
 				<div  class="bottom-block-1">
 				  <div  class="bottom-block-1_1">
+
+				  
 
 						<div style=" float:left; padding:10px;">
 							<h2> Мега.онлайн</h2>
