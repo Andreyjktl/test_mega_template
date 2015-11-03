@@ -5,7 +5,7 @@
                 <form id="wp_form" action="<?=SITE_DIR?>search.php" method="get" class="f3">
                     <fieldset style="
     border: 0px;
-"><table>
+"><table class="filter_table">
 <tr>
 	<td>Диаметр диска</td><td style="width:10px;"></td><td>Ширина диска</td></tr><tr>
 	<td>      <select id="wp_diameter" style="width:100px;" name="diameter">

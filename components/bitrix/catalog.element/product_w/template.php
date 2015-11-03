@@ -111,7 +111,8 @@ if ($sale || $hit) {
         <div class="item-info">
                 <p><span class="<?echo $season_class;?>"><?echo $season_name.($pin?', ':'')?></span><?echo ($pin?'<span class="spike">'.GetMessage("DVS_PIN").'</span>':'');?></p>
                 <p><?echo $arResult['LINK_MODEL']['PROPERTIES']['model_type']['VALUE'];?></p>
-                <p><?
+                <p> 
+                <?/*<?
                     if ($order) {
                         echo dvsORDER;
                     } elseif ($inStock) {
@@ -120,6 +121,8 @@ if ($sale || $hit) {
                         echo dvsOUTOFSTOCK;
                     }
                     echo $quantity;?>
+                    */?>
+
                 </p>
                 <?echo $price;?>
                 <form action="<?=POST_FORM_ACTION_URI?>" method="post" enctype="multipart/form-data">
@@ -225,7 +228,7 @@ $APPLICATION->IncludeComponent(
 	"similar_t", 
 	array(
 		"IBLOCK_TYPE" => "catalog",
-		"IBLOCK_ID" => "\$arParams[\"IBLOCK_ID\"]",
+		"IBLOCK_ID" => $arParams['IBLOCK_ID'],
 		"SECTION_ID" => "",
 		"SECTION_CODE" => "",
 		"SECTION_USER_FIELDS" => array(
@@ -237,8 +240,8 @@ $APPLICATION->IncludeComponent(
 		"FILTER_NAME" => "arrFilter",
 		"INCLUDE_SUBSECTIONS" => "N",
 		"SHOW_ALL_WO_SECTION" => "Y",
-		"PAGE_ELEMENT_COUNT" => "5",
-		"LINE_ELEMENT_COUNT" => "5",
+		"PAGE_ELEMENT_COUNT" => "4",
+		"LINE_ELEMENT_COUNT" => "4",
 		"PROPERTY_CODE" => array(
 			0 => "",
 			1 => "model",
@@ -274,12 +277,13 @@ $APPLICATION->IncludeComponent(
 		"SET_TITLE" => "N",
 		"SET_STATUS_404" => "N",
 		"CACHE_FILTER" => "N",
-		"PRICE_CODE" => array(
-			0 => "Продажи через сайт",
-		),
-		"USE_PRICE_COUNT" => "Y",
-		"SHOW_PRICE_COUNT" => "",
-		"PRICE_VAT_INCLUDE" => "N",
+		      "PRICE_CODE" => array(
+            0 => "Продажи через сайт",
+        ),
+        "USE_PRICE_COUNT" => "N",
+        "SHOW_PRICE_COUNT" => "1",
+        "PRICE_VAT_INCLUDE" => "N",
+        "PRICE_VAT_SHOW_VALUE" => "N",
 		"PRODUCT_PROPERTIES" => array(
 		),
 		"USE_PRODUCT_QUANTITY" => "Y",

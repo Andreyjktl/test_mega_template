@@ -7,19 +7,25 @@ foreach($arResult["ITEMS"] as $arElement){
 
     $pin = $sale = $hit = false;
 
-    $season_name = $arElement['PROPERTIES']['model_season']['VALUE_ENUM'];
-    if($arElement['PROPERTIES']['model_season']['VALUE_XML_ID']=='leto'){
-        $season_class = 'summer';
-    }elseif($arElement['PROPERTIES']['model_season']['VALUE_XML_ID']=='zima'){
-        $season_class = 'winter';
-        $pin = $arElement['PROPERTIES']['model_pin']['VALUE_XML_ID']=='yes'?true:false;
-    }else{
-        $season_class = 'allseason';
-    }
+    if($arElement['IBLOCK_ID']=='5'){
 
-    if (strtolower($arElement['PROPERTIES']['tyre_hit']['VALUE_XML_ID']) == 'yes'){
-        $hit = true;
-    }
+            $season_name = $arElement['PROPERTIES']['model_season']['VALUE_ENUM'];
+            if($arElement['PROPERTIES']['model_season']['VALUE_XML_ID']=='leto'){
+                $season_class = 'summer';
+            }elseif($arElement['PROPERTIES']['model_season']['VALUE_XML_ID']=='zima'){
+                $season_class = 'winter';
+                $pin = $arElement['PROPERTIES']['model_pin']['VALUE_XML_ID']=='yes'?true:false;
+            }else{
+                $season_class = 'allseason';
+            }
+
+            if (strtolower($arElement['PROPERTIES']['tyre_hit']['VALUE_XML_ID']) == 'yes'){
+                $hit = true;
+            }
+    }else{
+                
+            }
+
 
     $iPrice = $iDiscount = $iDiscountDiff = -1;
     $sPrice = $sDiscount = $sDiscountDiff = "";
@@ -41,8 +47,8 @@ foreach($arResult["ITEMS"] as $arElement){
         }
     }
     if($iDiscount < $iPrice){
-        $price = '<p><span class="strike">'.$iPrice.' <span class="rubl">'.GetMessage("DVS_RUB").'</span></span> ('.($iDiscountDiff).' <span class="rubl">'.GetMessage("DVS_RUB").'</span>)</p>
-                  <p class="price">'.$arPrice["DISCOUNT_VALUE"].' <span class="rubl">'.GetMessage("DVS_RUB").'</span></p>';
+        $price = '<p>Без скидки <span class="strike">'.$iPrice.' <span class="rubl">'.GetMessage("DVS_RUB").'</span></span></p>
+                  <p>Со скидкой </p><p class="price">'.round($arPrice["DISCOUNT_VALUE"]).' <span class="rubl">'.GetMessage("DVS_RUB").'</span></p>';
         $sale = true;
     } else {
         $price = '<p class="price">'.$iPrice.' <span class="rubl">'.GetMessage("DVS_RUB").'</span></p>';
@@ -57,7 +63,8 @@ foreach($arResult["ITEMS"] as $arElement){
         $quantity = '<p>'.$arElement['CATALOG_QUANTITY'] . dvsListQUANTITY.'</p>';//***
     }
 
-    $icons = '';
+   /* 
+   $icons = '';
     if ($sale || $hit) {
         $icons = '<ul class="icons">'.
             ($sale ? '<li><span class="red">'.dvsSALE.'</span></li>' : '')//***
@@ -65,6 +72,7 @@ foreach($arResult["ITEMS"] as $arElement){
             ($hit ? '<li><span class="green">'.dvsHIT.'</span></li>' : '')//***
         .'</ul>';
     }
+    */
 
     if (is_array($arElement['PREVIEW_PICTURE'])) {
         $picture = $arElement['PREVIEW_PICTURE']['SRC'];
@@ -90,8 +98,9 @@ foreach($arResult["ITEMS"] as $arElement){
             <input type="hidden" name="'.$arParams["ACTION_VARIABLE"].'BUY" value="Y">
             <div class="tocart buy-i" itemID="'.$arElement['ID'].'" offerStatus="'.($arElement['CATALOG_QUANTITY']==0?'not-available':'available').'">
                     <input type="hidden" id="price'.$arElement['ID'].'" value="'.$iDiscount.'" />
+                    <span class="zakaz">Заказать </span>
                     <input type="text" id="count'.$arElement['ID'].'" name="'.$arParams["PRODUCT_QUANTITY_VARIABLE"].'" value="'.($arElement['CATALOG_QUANTITY']<4?$arElement['CATALOG_QUANTITY']:4).'" size="5" class="text2">
-                    <span class="pcs">'.dvsUNIT.'</span>
+                    <span class="pcs">'.dvsUNIT.'</span> <br>
                     <button type="submit" class="button2 buy"><span>'.GetMessage("CATALOG_ADD_TO_BASKET").'</span></button>
                     <div class="clear"></div>
             </div>
@@ -101,7 +110,7 @@ foreach($arResult["ITEMS"] as $arElement){
 <div class="catalog" style="padding-top:30px;">
     <a name="similar" class="anchor"></a>
     <h2><?=GetMessage("DVS_SIMILAR");?></h2>
-    <div class="overflow">
+    <div class="overflow100">
             <table class="catalog">
                     <tr class="img"><?=implode('', $arImgs)?></tr>
                     <tr class="txt"><?=implode('', $arData)?></tr>

@@ -20,7 +20,7 @@ $MESS["CT_BCE_CATALOG_ADD"] = "В корзину";
 $MESS["CT_BCE_CATALOG_COMPARE"] = "Сравнить";
 
 $MESS["DVS_RUB"] = "P";
-$MESS["DVS_ONE_TYRES"] = "за 1 шину";
+$MESS["DVS_ONE_TYRES"] = "за 1 шт";
 $MESS["DVS_PIN"] = "шип";
 $MESS["DVS_V_PHOTO"] = "Обратите внимание на фотографии";
 $MESS["DVS_V_SIMILAR"] = "Обратите внимание на похожие товары";
