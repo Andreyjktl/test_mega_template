@@ -760,6 +760,7 @@ div.submenu2 {
 	z-index: 300;
 	display: none;
 	float: left;
+	margin-top: 3px;
 }
 div.submenu2 div.table {
 	display: table;
@@ -3590,4 +3591,44 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     text-transform: uppercase;
     font-weight: 600;
     color: #393939;
+}
 
+
+.submenu2_1{
+	width: 200px;
+	float: left;
+	padding: 10px;
+	border-right: 1px solid #DBDBDB;
+}
+.submenu2_2{
+	width: 250px;
+	float: left;
+	padding: 10px;
+	border-right: 1px solid #DBDBDB;
+}
+.submenu2_3{
+	width: 280px;
+	float: left;
+	padding: 10px;
+	border-right: 1px solid #DBDBDB;
+}
+.submenu2_4{
+	width: 200px;
+	float: left;
+	padding: 10px;
+}
+
+div.params_single {
+	float: left;
+    width: 98%;
+    min-height: 121px;
+    padding: 0px 0 10px 5px;
+    border: 0px;
+    margin-right: -10px;
+    background-color: #edf6fc;
+}
+
+div.params_single fieldset {
+    border: 0px;
+ 
+}
