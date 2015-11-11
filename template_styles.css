@@ -3522,6 +3522,7 @@ font-weight:600;
 .col_right{
 	margin-left: 250px;
 	padding-left: 10px;
+	min-height: 350px;
 }
 
 div.bottom-block-1{

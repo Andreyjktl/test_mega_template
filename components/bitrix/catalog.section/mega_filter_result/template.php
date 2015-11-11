@@ -1,7 +1,10 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <?if(count($arResult["ITEMS"])>0){?>
+<? //echo "<pre>";  print_r(count($arResult["ITEMS"])); echo "</pre>"; ?>
 <div class="catalog_left">
     <div class="overflow_left">
+
+    <? //echo "<pre>";  print_r($arResult); echo "</pre>"; ?>
 
         <div class="mega_result_table">
         <table class="catalog">
@@ -11,8 +14,8 @@
             $arImgs = $arData = $arBuy = array();
 
             foreach($arLine as $arElement):?>
-			<? //echo "<pre>";  print_r($arElement); echo "</pre>"; ?>
-            <? //echo "<pre>";  print_r($arResult); echo "</pre>"; ?>
+           <? //echo "<pre>";  print_r($arElement); echo "</pre>"; ?>
+            
                 <?
 
                 $this->AddEditAction($arElement['ID'], $arElement['EDIT_LINK'], CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "ELEMENT_EDIT"));
@@ -92,7 +95,7 @@
                     $buttonText = GetMessage("DVS_MAKE_ORDER");
                     if ((is_numeric($arElement['PROPERTIES']['order']['DESCRIPTION'])) && ($arElement['PROPERTIES']['order']['DESCRIPTION'] > 0)) {
                         $days = $arElement['PROPERTIES']['order']['DESCRIPTION'];
-                        $quantity = GetMessage('DVS_ORDER_TO') . date(' j.m', strtotime("+$days days"));
+                        $quantity = GetMessage('DVS_ORDER_TO') . date(' j.m', strtotime("$days days"));
                     } else {
                         $quantity = GetMessage('DVS_ORDER');
                     }
@@ -179,7 +182,7 @@
                 '.(($arElement['IBLOCK_ID']=='7')?
                     ('
                        <table class="param_table">
-			    <tr><td class="key">Ширина........ '.$arElement['PROPERTIES']['wheels_width']['VALUE'].' J</td></tr>
+               <tr><td class="key">Ширина........ '.$arElement['PROPERTIES']['wheels_width']['VALUE'].' J</td></tr>
                 <tr><td class="key">Диаметр....... '.$arElement['PROPERTIES']['wheels_diameter']['VALUE'].' &#8243;</td></tr>
                 <tr><td class="key">PCD..............'.$arElement['PROPERTIES']['wheels_aperture']['VALUE'].' мм</td></tr>
                 <tr><td class="key">Вылет (ET)...'.$arElement['PROPERTIES']['wheels_gab']['VALUE'].' мм</td></tr>
@@ -234,7 +237,7 @@
     </div>
 </div>
 <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
-	<br /><?=$arResult["NAV_STRING"]?>
+   <br /><?=$arResult["NAV_STRING"]?>
 <?endif;?>
 <?}else{
     echo GetMessage("DVS_NOT_FOUND");
