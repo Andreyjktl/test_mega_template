@@ -71,7 +71,7 @@
                     </fieldset>
                     <fieldset>
                         <input type="hidden" name="do_search" value="wheels" />
-                        <button type="submit"  id="wp_submit" class="button1" disabled="disabled"><span><?echo GetMessage("DVS_SEARCH_W");?></span></button> <button type="reset" class="button1"><span><?echo GetMessage("DVS_RESET");?></span></button>
+                        <button type="submit"  id="wp_submit" class="button1"><span><?echo GetMessage("DVS_SEARCH_W");?></span></button> <button type="reset" class="button1"><span><?echo GetMessage("DVS_RESET");?></span></button>
                     </fieldset>
                 </form>
 

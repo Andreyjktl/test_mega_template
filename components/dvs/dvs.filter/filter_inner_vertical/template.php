@@ -66,22 +66,36 @@
                         </select></td></tr>
             <tr><td> Сезон</td></tr>
             
-                          
-            <tr><td> 
+                                  
+                    <tr><td> 
+                    <? if(isset($_REQUEST['season'])&&$_REQUEST['season']==leto)
+                          echo '<input checked type="radio" name="season"  value="leto" ><span class="summer">Лето</span>';
+                      else
+                         echo '<input type="radio" name="season"  value="leto" ><span class="summer">Лето</span>';
+                    ?>
 
-            <input type="checkbox" name="season"  value="leto"><span class="summer">Лето</span>
-            <input type="checkbox" name="season"  value="zima"><span class="winter">Зима</span>
-             </td></tr>
+                     <? if(isset($_REQUEST['season'])&&$_REQUEST['season']==winter)
+                          echo '<input checked type="radio" name="season"  value="winter" ><span class="winter">Зима</span>';
+                      else
+                         echo '<input type="radio" name="season"  value="winter" ><span class="winter">Зима</span>';
+                    ?>
+                    
+                     </td></tr>
             <tr><td>Шипованные</td></tr> 
-            <tr><td>  
-                <input type="checkbox" name="pin"  value="156764"><span class="pin">Да</span>
-                <input type="checkbox" name="pin"  value="156721">Нет</span>
+                        <tr><td>  
+                        <? if(isset($_REQUEST['pin'])&&$_REQUEST['pin']==156764)
+                              echo '<input checked type="radio" name="pin"  value="156764" ><span class="pin">Да</span>';
+                          else
+                             echo '<input type="radio" name="pin"  value="156764" ><span class="pin">Да</span>';
+                        ?>
 
-</td></tr>
+                        <? if(isset($_REQUEST['pin'])&&$_REQUEST['pin']==156721)
+                              echo '<input checked type="radio" name="pin"  value="156721" ><span class="pin">Да</span>';
+                          else
+                             echo '<input type="radio" name="pin"  value="156721" ><span class="pin">Нет</span>';
+                        ?>
 
-                        
-
-
+                        </td></tr>
 
               </table>
                         

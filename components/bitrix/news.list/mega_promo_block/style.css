@@ -1,0 +1,125 @@
+/* Promo Block */
+div.promo5 {
+	overflow: hidden;
+    margin-bottom: 30px;
+    margin-right: -5px;
+}
+
+div.promo5_1 {
+	width: 19%;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+}
+
+div.promo5_1:nth-child(1) {
+	background: #9AD9EA;
+}
+div.promo5_1:nth-child(2) {
+	background: #00A3E8;
+}
+div.promo5_1:nth-child(3) {
+	background: #EEECEC;
+}
+div.promo5_1:nth-child(4) {
+	background: #00A3E8;
+}
+div.promo5_1:nth-child(5) {
+	background: #9AD9EA;
+}
+
+div.promo div.hovered {
+	background-position: 0 -36px;
+}
+div.promo div.tires {
+	position: absolute;
+	left: 100px;
+	top: 27px;
+	z-index: 25;
+}
+ul.promo {
+	list-style: none;
+	list-style-image: none;
+	padding: 0;
+	margin: 0;
+	height: 283px;
+}
+ul.promo li {
+	width: 100%;
+	height: 283px;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: none;
+}
+ul.promo li.active {
+	z-index: 20;
+}
+ul.promo li.last-active {
+	z-index: 15;
+}
+ul.promo div.image {
+	width: 939px;
+	height: 250px;
+	overflow: hidden;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+ul.promo div.image img {
+	min-width: 939px;
+	min-height: 250px;
+}
+ul.promo div.sticker {
+	width: 300px;
+	height: 150px;
+	/* background: url(./images/sticker.png) no-repeat 0 0; */
+	background-color: rgba(255,255,255,0.75);
+	position: absolute;
+	right: 69px;
+	top: 40px;
+	z-index: 30;
+	/*border-radius: 50px;
+	border: 1px solid white;*/
+	padding: 15px 12px 8px 14px;
+	overflow: hidden;
+	/*background: #fff; */
+}
+div.bg {
+	width: 300px;
+	height: 150px;
+	/*padding: 15px 12px 8px 14px;*/
+	overflow: hidden;
+}
+ul.promo div.sticker div.loading {
+	background: url(./images/loading.gif) no-repeat 50% 50%;
+}
+ul.promo div.sticker div.loading div {
+	display: none;
+}
+ul.promo div.sticker h3 {
+	line-height: 1.35em;
+	padding: 0 0 19px 0;
+	margin: 0;
+	color: #229CC8;
+}
+ul.promo div.sticker span.price {
+	font-size: 1.3em;
+}
+
+
+/* Promo Block Mini */
+div.mini {
+	height: 10px;
+}
+div.mini div.banner {
+	position: absolute;
+	right: 12px;
+	top: 14px;
+	z-index: 50;
+}

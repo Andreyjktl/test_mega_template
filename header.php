@@ -199,15 +199,13 @@
 												false
 											);?>
 								</li>
-								<?/*<li><a href="<?=SITE_DIR?>special-offers/"><span><?=$MESS["ACTIONS"];?></span></a></li>
-								<li><a href="<?=SITE_DIR?>tyres/podbor-shin.php"><span>Шины</span></a></li>
-								<li><a href="<?=SITE_DIR?>wheels/podbor-diskov.php"><span>Диски</span></a></li>*/?>
+								<?/*<li><a href="<?=SITE_DIR?>special-offers/"><span><?=$MESS["ACTIONS"];?></span></a></li>*/?>
 
 								<li><a href="<?=SITE_DIR?>news/"><span>Новости</span></a></li>
 								<li><a href="<?=SITE_DIR?>articles/"><span>Статьи</span></a></li>
 								<li><a href="<?=SITE_DIR?>e-store/"><span>Покупателю</span></a></li>
 								<li><a href="<?=SITE_DIR?>contacts/"><span>Контакты</span></a></li>
-								<?/*<li><a href="<?=SITE_DIR?>contacts/"><span>Контакты</span></a></li>*/?>
+								
 							</ul>
 						</div>
 

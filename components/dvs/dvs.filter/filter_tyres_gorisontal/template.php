@@ -2,7 +2,7 @@
 <div class="filter">
 <div class="top_filter" >
                 <!-- TYRES.PARAMS -->
-                <form id="tp_form" action="<?=SITE_DIR?>search.php" method="get" class="f1">
+                <form id="tp_form" action="<?=SITE_DIR?>tyres/podbor-shin.php" method="get" class="f1">
                     <fieldset>
             <table style="float:left;" class="filter_table">
             <tr>

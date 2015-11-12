@@ -2,7 +2,7 @@
 <div class="filter">
    <div class="top_filter">
            <!-- WHEEL.PARAMS -->
-                <form id="wp_form" action="<?=SITE_DIR?>search.php" method="get" class="f3">
+                <form id="wp_form" action="<?=SITE_DIR?>wheels/podbor-diskov.php" method="get" class="f3">
                     <fieldset>
                     <table style="text-align:center; float:left;" class="filter_table">
                     <tr>

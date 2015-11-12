@@ -49,27 +49,36 @@
             
                  <tr><td>
                     <table>
-                        <tr><td> Сезон</td><td>Шипованные</td></tr>
-                        
-                                      
-                        <tr><td style="padding-right: 35px;"> 
-                        <select style="width:100%;" class="size2" id="tp_season" name="season" id="season"><option value="0"></option>
-                                        <?foreach($arResult['TYRES']['SEASON'] as $key => $value){
-                                            if(isset($_REQUEST['season'])&&$_REQUEST['season']==$key)
-                                                echo '<option value="'.$key.'" selected>'.$value.'</option>';
-                                            else
-                                                echo '<option value="'.$key.'">'.$value.'</option>';
-                                        }?>
-                                    </select>
-                         </td><td>  
-                           <select  style="width:100%" class="size2" id="tp_pin" name="pin" id="pin" ><option value="0"></option>
-                                        <?foreach($arResult['TYRES']['PIN'] as $key => $value){
-                                            if(isset($_REQUEST['pin'])&&$_REQUEST['pin']==$key)
-                                                echo '<option value="'.$key.'" selected>'.$value.'</option>';
-                                            else
-                                                echo '<option value="'.$key.'">'.$value.'</option>';
-                                        }?>
-                                    </select>
+                       <tr><td> Сезон</td></tr>
+            
+                                  
+                    <tr><td> 
+                    <? if(isset($_REQUEST['season'])&&$_REQUEST['season']==leto)
+                          echo '<input checked type="radio" name="season"  value="leto" ><span class="summer">Лето</span>';
+                      else
+                         echo '<input type="radio" name="season"  value="leto" ><span class="summer">Лето</span>';
+                    ?>
+
+                     <? if(isset($_REQUEST['season'])&&$_REQUEST['season']==winter)
+                          echo '<input checked type="radio" name="season"  value="winter" ><span class="winter">Зима</span>';
+                      else
+                         echo '<input type="radio" name="season"  value="winter" ><span class="winter">Зима</span>';
+                    ?>
+                    
+                     </td></tr>
+            <tr><td>Шипованные</td></tr> 
+                        <tr><td>  
+                        <? if(isset($_REQUEST['pin'])&&$_REQUEST['pin']==156764)
+                              echo '<input checked type="radio" name="pin"  value="156764" ><span class="pin">Да</span>';
+                          else
+                             echo '<input type="radio" name="pin"  value="156764" ><span class="pin">Да</span>';
+                        ?>
+
+                        <? if(isset($_REQUEST['pin'])&&$_REQUEST['pin']==156721)
+                              echo '<input checked type="radio" name="pin"  value="156721" ><span class="pin">Да</span>';
+                          else
+                             echo '<input type="radio" name="pin"  value="156721" ><span class="pin">Нет</span>';
+                        ?>
 
                         </td></tr>
                      </table>
