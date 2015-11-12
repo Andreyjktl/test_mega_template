@@ -3219,8 +3219,17 @@ text-align: center;
 }
 
 .filter_table select{
-    border: 2px solid #0085C8;
-    border-radius: 10px;
+   border: 0px solid #0085C8;
+    border-radius: 5px;
+    background: #EEECEC;
+}
+
+.top_filter_block{
+	    background-color: #FFFFFF;
+    border-radius: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px dotted blue;
 }
 /*Конец. Поиск*/
 
@@ -3633,3 +3642,4 @@ div.params_single fieldset {
     border: 0px;
  
 }
+

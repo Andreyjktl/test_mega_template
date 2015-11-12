@@ -7,15 +7,15 @@
 
 
 
-<div class="submenu2" style="width:800px !important;">
+<div class="submenu2" style="width:937px !important;">
 
-			<?//<div class="submenu2_1"></div>?>
+		
 
-			<div class="submenu2_2">
+			<div>
 				<h4>Подбор шин</h4>
 			<?$APPLICATION->IncludeComponent(
 				"dvs:dvs.filter",
-				"filter_tyres_vertical",
+				"filter_tyres_gorisontal",
 				Array(
 					"A_IBLOCK_ID" => "8",
 					"B_IBLOCK_ID" => "4",
@@ -30,13 +30,13 @@
 				
 			</div>
 
-			<div class="submenu2_3">
+			<div>
 				<?if (!empty($arResult)):?>
-					<a href="<?=SITE_DIR?>tyres"><h4>Каталог шин</h4></a>
+					<a href="<?=SITE_DIR?>tyres"><h4>Каталоги производителей шин</h4></a>
 			    	<div class="table">
 							<?
 							$cnt = count($arResult);
-							$in_list = ceil($cnt/3);
+							$in_list = ceil($cnt/10);
 							
 							echo '<ul>';
 							$i = 0;
@@ -60,25 +60,7 @@
 
 			</div>
 
-			<div class="submenu2_4">
-					<h4 style="align:center;">Случайные товары</h4>
-						<div class="menu_photo" >		
-								<?$APPLICATION->IncludeComponent(
-								"bitrix:photo.random",
-								"",
-								Array(
-									"COMPONENT_TEMPLATE" => ".default",
-									"IBLOCK_TYPE" => "catalog",
-									"IBLOCKS" => array("4"),
-									"DETAIL_URL" => "",
-									"CACHE_TYPE" => "A",
-									"CACHE_TIME" => "180",
-									"CACHE_GROUPS" => "Y",
-									"PARENT_SECTION" => ""
-								)
-								);?> 
-						</div>
-			</div>
+			
 
 		
 
