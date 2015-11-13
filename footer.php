@@ -10,10 +10,20 @@
 
                 <!-- Bottom Block -->
                 <div class="clear:both;"></div>
-
-                	<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/payment_post_bricks.php"), false);?>
-				
-
+                	<div class="main_news_out">
+	                	<?if (CSite::InDir(SITE_DIR.'index.php')) {?>
+	                		<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/news.php"), false);?>
+	                	<?} 
+						else {?>
+						<?}?>
+					</div>
+					<div style="clear:both;"></div>
+				<div class="brick_wall_out">
+					<div class="brick_wall">
+		                <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/payment_post_bricks.php"), false);?>
+					</div>	
+				</div>
+				<div style="clear:both;"></div>
 
 				<div  class="bottom-block-1">
 				  <div  class="bottom-block-1_1">
