@@ -6,7 +6,7 @@
                     <fieldset>
                     <table style="width:200px">
 
-                        <tr><td>Бренд</td></tr>
+                        <tr><td><?echo GetMessage("DVS_BREND");?></td></tr>
                         <tr><td> <select style="width:100%" id="wp_brand" class="size2" name="brand">
                                         <option value="0"></option>
                                         <?foreach($arResult['WHEELS']['BRAND'] as $key => $value){
@@ -16,7 +16,7 @@
                                                 echo '<option value="'.$key.'">'.$value.'</option>';
                                         }?>
                                     </select></td></tr>
-                        <tr><td> Диаметр</td></tr>
+                        <tr><td> <?echo GetMessage("DVS_DIAM");?></td></tr>
                         <tr><td> <select style="width:100%"  id="wp_diameter" class="size2" name="diameter">
                                         <option value="0"></option>
                                         <?foreach($arResult['WHEELS']['DIAM'] as $key => $value){
@@ -26,7 +26,7 @@
                                                 echo '<option value="'.$key.'">'.$value.'</option>';
                                         }?>
                                     </select></td></tr>
-                        <tr><td> Ширина</td></tr>
+                        <tr><td><?echo GetMessage("DVS_WIDTH");?></td></tr>
                         <tr><td> <select style="width:100%"  id="wp_width" class="size2" name="width">
                                         <option value="0"></option>
                                         <?foreach($arResult['WHEELS']['WIDTH'] as $key => $value){
@@ -36,7 +36,7 @@
                                                 echo '<option value="'.$key.'">'.$value.'</option>';
                                         }?>
                                     </select></td></tr>
-                        <tr><td> PCD</td></tr>
+                        <tr><td><?echo GetMessage("DVS_PCD");?></td></tr>
                         <tr><td> <select style="width:100%"  id="wp_apperture" class="size2" name="aperture">
                                         <option value="0"></option>
                                         <?foreach($arResult['WHEELS']['APERTURE'] as $key => $value){
@@ -46,7 +46,7 @@
                                                 echo '<option value="'.$key.'">'.$value.'</option>';
                                         }?>
                                     </select></td></tr>
-                        <tr><td> Диаметр ступицы</td></tr>
+                        <tr><td><?echo GetMessage("DVS_STUP");?></td></tr>
                         <tr><td> <select style="width:100%"  id="wp_center" class="size2" name="center">
                                         <option value="0"></option>
                                         <?foreach($arResult['WHEELS']['CENTER'] as $key => $value){
@@ -56,7 +56,7 @@
                                                 echo '<option value="'.$key.'">'.$value.'</option>';
                                         }?>
                                     </select></td></tr>
-                        <tr><td>  Вылет</td></tr>
+                        <tr><td><?echo GetMessage("DVS_ET");?></td></tr>
                         <tr><td> <select  style="width:100%" id="wp_grab" class="size0" name="gab">
                                         <option value="0"></option>
                                         <?foreach($arResult['WHEELS']['GAB'] as $key => $value){

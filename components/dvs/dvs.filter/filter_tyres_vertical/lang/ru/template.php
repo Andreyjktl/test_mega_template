@@ -72,4 +72,6 @@ $MESS['DVS_ET'] = 'Вылет (ET)';
 $MESS['DVS_COUNT'] = 'Количество отверстий';
 $MESS['DVS_SEARCH_W'] = 'Найти диски';
 $MESS['DVS_RESET'] = 'Сбросить';
+$MESS['DVS_BREND'] = 'Бренд';
+$MESS['DVS_STUP'] = 'Диаметр ступицы';
 ?>

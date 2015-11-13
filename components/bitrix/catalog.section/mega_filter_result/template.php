@@ -1,4 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+
 <?if(count($arResult["ITEMS"])>0){?>
 <? //echo "<pre>";  print_r(count($arResult["ITEMS"])); echo "</pre>"; ?>
 <div class="catalog_left">

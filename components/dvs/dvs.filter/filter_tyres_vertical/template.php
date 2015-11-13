@@ -6,7 +6,7 @@
                 <form style="display:block:" id="tp_form" action="<?=SITE_DIR?>tyres/podbor-shin.php" method="get">
                     <fieldset>
            <table style="width:200px">
-            <tr><td> Бренд</td></tr>
+            <tr><td><?=GetMessage("DVS_BREND");?> </td></tr>
             <tr><td>  <select style="width:100%"  class="size3" name="brand"><option value="0"></option>
                                 <?foreach($arResult['TYRES']['BRAND'] as $key => $value){
                                     if(isset($_REQUEST['brand'])&&$_REQUEST['brand']==$key)
@@ -16,7 +16,7 @@
                                 }?>
                             </select></td></tr>
 
-            <tr><td> Диаметр  </td></tr>
+            <tr><td><?=GetMessage("DVS_DIAM");?> </td></tr>
             <tr><td>  <select style="width:100%"  class="size2" id="tp_diameter" name="diameter"><option value="0"></option>
                             <?foreach($arResult['TYRES']['DIAM'] as $key => $value){
                                 if(isset($_REQUEST['diameter'])&&$_REQUEST['diameter']==$key)
@@ -26,7 +26,7 @@
                             }?>
                         </select></td></tr>
                       
-           <tr><td> Ширина</td></tr>
+           <tr><td> <?=GetMessage("DVS_WIDTH");?></td></tr>
             <tr><td> <select style="width:100%" class="size1" id="tp_width" name="width"><option value="0"></option>
                             <?foreach($arResult['TYRES']['WIDTH'] as $key => $value){
                                 if(isset($_REQUEST['width'])&&$_REQUEST['width']==$key)
@@ -36,7 +36,7 @@
                             }?>
                     </select>
                     </td></tr>
-                <tr><td>Высота</td></tr>
+                <tr><td><?=GetMessage("DVS_HEIGHT");?></td></tr>
 
                     <tr><td> <select style="width:100%"  class="size1" id="tp_height" name="height"><option value="0"></option>
                             <?foreach($arResult['TYRES']['HEIGHT'] as $key => $value){
@@ -49,7 +49,7 @@
             
                  <tr><td>
                     <table>
-                       <tr><td> Сезон</td></tr>
+                       <tr><td> <?=GetMessage("DVS_SEASON");?></td></tr>
             
                                   
                     <tr><td> 
@@ -59,14 +59,14 @@
                          echo '<input type="radio" name="season"  value="leto" ><span class="summer">Лето</span>';
                     ?>
 
-                     <? if(isset($_REQUEST['season'])&&$_REQUEST['season']==winter)
-                          echo '<input checked type="radio" name="season"  value="winter" ><span class="winter">Зима</span>';
+                     <? if(isset($_REQUEST['season'])&&$_REQUEST['season']==zima)
+                          echo '<input checked type="radio" name="season"  value="zima" ><span class="winter">Зима</span>';
                       else
-                         echo '<input type="radio" name="season"  value="winter" ><span class="winter">Зима</span>';
+                         echo '<input type="radio" name="season"  value="zima" ><span class="winter">Зима</span>';
                     ?>
                     
                      </td></tr>
-            <tr><td>Шипованные</td></tr> 
+            <tr><td><?=GetMessage("DVS_PIN");?></td></tr> 
                         <tr><td>  
                         <? if(isset($_REQUEST['pin'])&&$_REQUEST['pin']==156764)
                               echo '<input checked type="radio" name="pin"  value="156764" ><span class="pin">Да</span>';
@@ -75,12 +75,14 @@
                         ?>
 
                         <? if(isset($_REQUEST['pin'])&&$_REQUEST['pin']==156721)
-                              echo '<input checked type="radio" name="pin"  value="156721" ><span class="pin">Да</span>';
+                              echo '<input checked type="radio" name="pin"  value="156721" ><span class="pin">Нет</span>';
                           else
                              echo '<input type="radio" name="pin"  value="156721" ><span class="pin">Нет</span>';
                         ?>
 
                         </td></tr>
+                    
+                   
                      </table>
                 </td></tr>
       

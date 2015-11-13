@@ -1,0 +1,30 @@
+/* Promo Block */
+div.promo5 {
+	overflow: hidden;
+    margin-bottom: 10px;
+    margin-right: -5px;
+}
+
+div.promo5_1 {
+	width: 19%;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+}
+
+div.promo5_1:nth-child(1) {
+	background: #EEECEC;
+}
+div.promo5_1:nth-child(2) {
+	background: #F6F5F5;
+}
+div.promo5_1:nth-child(3) {
+	background: #EEECEC;
+}
+div.promo5_1:nth-child(4) {
+	background: #F6F5F5;
+}
+div.promo5_1:nth-child(5) {
+	background: #EEECEC;
+}
+
