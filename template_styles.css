@@ -1099,7 +1099,7 @@ div.copyright {
 	font-size: 12px;
 	
     color: #78747c;
-        background: #302b37 url('./images/gray-pattern.png');
+    background: white;
 }
 
 
@@ -1496,8 +1496,8 @@ div.index-page{
 	border:none;
 }
 div.full {
-	margin-left: -10px;
-	margin-right: -10px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 div.crop-top {
 	margin-top: -39px;
@@ -3513,3 +3513,18 @@ min-width: 937px;
     width: 85%;
     margin: 10px auto 0;
    }
+
+div.main_block_grey{
+	width: 100%;
+    background-color: #FAFAFA;
+    border: 1px solid #ebebeb;
+    /* padding: 20px; */
+    margin-top: 30px;
+}
+
+div.main_block_inner{
+	margin: 20px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.1);
+}
