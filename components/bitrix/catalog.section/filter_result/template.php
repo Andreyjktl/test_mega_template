@@ -131,7 +131,10 @@
                 $arImgs[] = '<td><div><a href="'.$arElement['DETAIL_PAGE_URL'].'"><img src="'.$picture.'" width="'.$width.'" height="'.$height.'" alt="'.$arElement['NAME'].'" id="i'.$arElement['ID'].'" /></a>'.$icons.'</div></td>';
 
                 $arData[] = '<td id="'.$this->GetEditAreaId($arElement['ID']).'">
-                <h4 id="name'.$arElement['ID'].'"><a href="'.$arElement['DETAIL_PAGE_URL'].'">'.$arElement['NAME'].'</a></h4>'.
+                <h4 id="name'.$arElement['ID'].'">
+                    <a href="'.$arElement['DETAIL_PAGE_URL'].'">
+                    '.$str = str_replace("(","",str_replace(")","",$arElement['NAME'])) .'
+                    </a></h4>'.
 
                 (($arElement['IBLOCK_CODE']=='tyres')?('<p><span class="'.$season_class.'">'.$season_name.($pin?', ':'').'</span>'.($pin?'<span class="spike">'.GetMessage("DVS_PIN").'</span>':'').'</p>
                 <p>'.$arElement['PROPERTIES']['model_type']['VALUE'].'</p>'):'')

@@ -155,7 +155,8 @@
 
                 $arData[] = '<td style="padding-left:7px;" class="txt" id="'.$this->GetEditAreaId($arElement['ID']).'">
                 <h4 id="name'.$arElement['ID'].'"><a href="'.$arElement['DETAIL_PAGE_URL'].'">
-                '.trim($arElement['NAME'], "(" ) .'</a></h4>
+                '.$str = str_replace("(","",str_replace(")","",$arElement['NAME'])) .'</a></h4>
+
                
                 '.(($arElement['IBLOCK_ID']=='5')?
                     ('

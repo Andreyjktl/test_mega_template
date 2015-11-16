@@ -61,7 +61,8 @@ $this->setFrameMode(true);
 
 			<a href="<?=$arElement["DETAIL_PAGE_URL"]?>">
 						
-			<?=$arElement["NAME"]?>
+			
+			<?=$str = str_replace("(","",str_replace(")","",$arElement['NAME']))?>
 
 			</a>
 			<?if(count($arElement["SECTION"]["PATH"])>0):?>
