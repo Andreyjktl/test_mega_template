@@ -1691,18 +1691,18 @@ div.brands {
 	margin-bottom: -10px;
 }
 div.brands ul {
-	list-style: none;
-	list-style-image: none;
-	padding: 0;
-	margin: 0;
-	width: 895px;
+    list-style: none;
+    list-style-image: none;
+    padding: 0;
+    margin: 0;
+    /* width: 895px; */
 }
 div.brands ul li {
-	float: left;
-	width: 140px;
-	height: 180px;
-	padding: 0 30px 0 0;
-	overflow: hidden;
+    float: left;
+    width: 140px;
+    height: 160px;
+    padding: 0 10px 0 0;
+    overflow: hidden;
 }
 div.brands div.img {
 	width: 116px;
@@ -1760,7 +1760,7 @@ div.catalog h2 {
 }
 div.catalog div.overflow {
 	overflow: hidden;
-	width: 820px;
+ 	/* width: 820px; */
 }
 
 div.catalog div.overflow100 {
@@ -1920,7 +1920,7 @@ ul.icons {
 }
 ul.icons li {
 	width: 44px;
-	height: 44px;
+	height: 24px;
 	float: left;
 	margin-right: 2px;
 }
@@ -2371,7 +2371,7 @@ h4.canceled {
 
 /* Advertise */
 div.adv {
-	width: 400px;
+	width: 250px;
     /* background: #f8f8f8; */
     /* border: 1px solid #d1dadf; */
     padding: 10px 10px 10px 10px;
@@ -2394,7 +2394,7 @@ h4.trunks {
 
 /* Item Details */
 div.item {
-	padding: 2px 0 87px 0;
+	padding: 2px 0 67px 0;
 }
 div.item div.preview {
 	width: 300px;
@@ -3074,11 +3074,11 @@ text-align: center;
 }
 
 .top_filter_block{
-	    background-color: #FFFFFF;
+	background-color: #FFFFFF;
     border-radius: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 1px dotted blue;
+    border: 1px solid #ebebeb;
 }
 /*Конец. Поиск*/
 
@@ -3527,4 +3527,16 @@ div.main_block_inner{
     padding: 10px;
     background-color: white;
     box-shadow: 0 0 10px 5px rgba(0,0,0,.1);
+}
+
+div.soc_share{
+	width: 250px;
+	float: right;
+    background: #F8F8F8;
+    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 10px;
+    padding-top: 15px;
+    margin-top: 10px;
+    margin-right: 20px;
 }

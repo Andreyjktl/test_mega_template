@@ -76,8 +76,9 @@ if ($arResult['PROPERTIES']['order']['VALUE'] == 'Y'){
         $outOfStock = false;
     }
 }
+?>
 
-
+<? /*
 //шильды
 $icons = '';
 if ($sale || $hit) {
@@ -89,7 +90,7 @@ if ($sale || $hit) {
         .
     '</ul>';
 }
-?>
+*/ ?>
 
 <? //echo "<pre>";  print_r($arResult); echo "</pre>"; ?>
 <!-- Item Details -->
@@ -138,9 +139,8 @@ if ($sale || $hit) {
                             <div class="clear"></div>
                     </div>
                 </form>
-                <hr/>
-<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="link" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus"></div>
-       
+               
+
                 <?if(is_array($arResult['LINK_MODEL']['PROPERTIES']['model_more_photos']['VALUE'])>0)
                     echo '<p class="link"><a href="#photos">'.GetMessage("DVS_V_PHOTO").'</a></p>';
                 if($arResult['SIMILAR_COUNT']>0)
@@ -151,6 +151,9 @@ if ($sale || $hit) {
                 <h4 class="trunks">Бонус</h4>
                 <p><?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/trunks.php"), false);?></p>
         </div>
+        
+           <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/adds/social.php"), false);?>
+       
         <div class="clear"></div>
 </div>
 <!-- // Item Details -->

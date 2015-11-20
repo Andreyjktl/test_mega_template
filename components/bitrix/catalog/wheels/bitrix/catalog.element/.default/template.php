@@ -26,8 +26,12 @@
    
             <img border="0" src="<?=$picture?>" width="<?=$width?>" height="<?=$height?>" alt="<?=$arResult["NAME"]?>" title="<?=$arResult["NAME"]?>" />
             <br><br><br>
-			<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus"></div>
+             <div class="adv">
+                <p><?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/trunks.php"), false);?></p>
         </div>
+        <p><?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/adds/social.php"), false);?></p>
+              
+			</div>
         <!-- // Item Preview Photo -->
 
         <!-- List Table -->
@@ -96,18 +100,15 @@
 
                 <br/><br/>
             <?endif;?>
-               <?/* <div class="txt">
-                        <h4 class="trunks"><?=GetMessage("DVS_TRUNKS");?></h4>
-                        <p><?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/trunks.php"), false);?></p>
-                        <br/>
+                <div class="txt">
+                       
+
                         <?if(count($arResult['DISPLAY_PROPERTIES']['wheels_more_photos']['VALUE'])>0)
                             echo '<p class="link"><a href="#photos">'.GetMessage("DVS_V_PHOTO").'</a></p>';
                         ?>
                 </div>
-                <div class="adv">
-                        <h4><?=GetMessage("DVS_AD");?></h4>
-                        <p><?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/ads.php"), false);?></p>
-                </div> */?>
+                
+                        
                 <div class="clear"></div>
         </div>
         <!-- // List Table -->

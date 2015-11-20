@@ -66,7 +66,12 @@
                                                 echo '<option value="'.$key.'">'.$value.'</option>';
                                         }?>
                                     </select></td></tr>
+
+
+                                   
             </table>
+            <? //echo "<pre>";  print_r($arResult); echo "</pre>"; ?>
+          
                        
                     </fieldset>
                     <fieldset>

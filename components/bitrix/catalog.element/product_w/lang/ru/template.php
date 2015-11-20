@@ -36,4 +36,7 @@ $MESS["DVS_ORDER_TO"] = "Под заказ к";
 $MESS["DVS_IN_BASKET"] = "В корзине";
 $MESS["DVS_MORE_THAN"] = "Больше";
 $MESS["DVS_IN_BASKET"] = "В корзине";
+
+$MESS["OAS_SHARE"] = "Поделиться";
+
 ?>

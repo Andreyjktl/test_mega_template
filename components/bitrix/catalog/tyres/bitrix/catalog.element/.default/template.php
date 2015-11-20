@@ -84,7 +84,11 @@
 
                         ?>
                         <tr>
-                                <td class="title" id="name<?echo $arOffer['ID'];?>"><a href="<?echo $arOffer['DETAIL_PAGE_URL'];?>"><?echo str_replace(array($arResult['SECTION']['NAME'].' ', $arResult['NAME'].' '), array('', ''), $arOffer['NAME']);?></a></td>
+                                <td class="title" id="name<?echo $arOffer['ID'];?>">
+                                    <a href="<?echo $arOffer['DETAIL_PAGE_URL'];?>">
+                                        <?echo str_replace(array($arResult['SECTION']['NAME'].' ', $arResult['NAME'].' '), array('', ''), $arOffer['NAME']);?>
+                                    </a>
+                                    </td>
                                 <td class="presence"><? echo $quantity; ?></td>
                                 <td class="price"><?echo $iDiscount;?> <span class="rubl"><?=GetMessage("DVS_RUB");?></span></td>
                                 <td class="fn">X</td>

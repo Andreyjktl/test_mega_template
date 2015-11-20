@@ -189,7 +189,8 @@
                 <tr><td class="key">PCD..............'.$arElement['PROPERTIES']['wheels_aperture']['VALUE'].' мм</td></tr>
                 <tr><td class="key">Вылет (ET)...'.$arElement['PROPERTIES']['wheels_gab']['VALUE'].' мм</td></tr>
                 <tr><td class="key">(DIA)..............'.$arElement['PROPERTIES']['wheels_center']['VALUE'].' мм</td></tr>
-                 
+                 <tr><td class="key">Тип диска.........'.$arElement['PROPERTIES']['TIPDISKI']['VALUE'].'</td></tr>
+                
                 </table> 
                    '):'').'
                 <p class="'.$class.'"></p>'

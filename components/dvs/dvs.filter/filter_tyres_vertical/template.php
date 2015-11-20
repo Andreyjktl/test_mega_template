@@ -48,6 +48,11 @@
                         </select></td></tr>
             
                  <tr><td>
+
+
+
+                 
+
                     <table>
                        <tr><td> <?=GetMessage("DVS_SEASON");?></td></tr>
             
@@ -81,12 +86,15 @@
                         ?>
 
                         </td></tr>
-                    
+
+                       
                    
                      </table>
+
                 </td></tr>
       
               </table>
+               <? //echo "<pre>";  print_r($arResult); echo "</pre>"; ?>
                         
                     </fieldset>
                     <fieldset>
