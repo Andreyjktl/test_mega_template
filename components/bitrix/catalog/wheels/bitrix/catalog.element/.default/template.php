@@ -39,12 +39,19 @@
                 <?if(is_array($arResult["OFFERS"]) && !empty($arResult["OFFERS"])):?>
                 <table class="list">
                         <tr>
-                            <th><?=GetMessage("DVS_SIZE");?></th><th><?=GetMessage("DVS_AVAILABLE");?></th><th><?=GetMessage("DVS_PRICE");?></th><th>&nbsp;</th><th><?=GetMessage("DVS_QUANTITY");?></th>
+                            <th><?=GetMessage("DVS_SIZE");?></th>
+                            <th><?=GetMessage("DVS_AVAILABLE");?></th>
+                            <th><?=GetMessage("DVS_PRICE");?></th>
+                            <th>&nbsp;</th>
+                            <th><?=GetMessage("DVS_QUANTITY");?></th>
                         </tr>
 
                         <?foreach($arResult["OFFERS"] as $arOffer):?>
                         <tr>
-                                <td class="title" id="name<?echo $arOffer['ID'];?>"><a href="<?echo $arOffer['DETAIL_PAGE_URL'];?>"><?echo str_replace(array($arResult['SECTION']['NAME'].' ', $arResult['NAME'].' '), array('', ''), $arOffer['NAME']);?></a></td>
+                                <td class="title" id="name<?echo $arOffer['ID'];?>">
+                                <a href="<?echo $arOffer['DETAIL_PAGE_URL'];?>">
+                                <?echo str_replace("(","",str_replace(")","",str_replace(array($arResult['SECTION']['NAME'].' ', $arResult['NAME'].' '), array('', ''), $arOffer['NAME'])));?></a></td>
+                                
                                 <td class="presence">
                                 <?
 

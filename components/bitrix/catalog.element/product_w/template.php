@@ -110,7 +110,9 @@ if ($sale || $hit) {
         </div>
 
         <div class="item-info">
-                <p><span class="<?echo $season_class;?>"><?echo $season_name.($pin?', ':'')?></span><?echo ($pin?'<span class="spike">'.GetMessage("DVS_PIN").'</span>':'');?></p>
+                <p><span class="<?echo $season_class;?>">
+                <?echo $season_name.($pin?', ':'')?></span>
+                <?echo ($pin?'<span class="spike">'.GetMessage("DVS_PIN").'</span>':'');?></p>
                 <p><?echo $arResult['LINK_MODEL']['PROPERTIES']['model_type']['VALUE'];?></p>
                 <p> 
                 <?/*<?
@@ -148,8 +150,7 @@ if ($sale || $hit) {
                 ?> </div>
 
         <div class="adv">
-                <h4 class="trunks">Бонус</h4>
-                <p><?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/trunks.php"), false);?></p>
+            <p><?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/trunks.php"), false);?></p>
         </div>
         
            <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/adds/social.php"), false);?>

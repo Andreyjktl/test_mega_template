@@ -65,7 +65,18 @@ if($num==0){
 }else{
 
 ?>
-        <a href="<?=$arParams["PATH_TO_BASKET"]?>"><strong><?echo $num;?> <?=GetMessage("DVS_ITEM");?><?echo $arResult['END'];?> <br/>
-        <?=GetMessage("DVS_SUMM");?> <?echo round($sum);?> <span class="rubl"><?=GetMessage("DVS_RUB");?></span></strong></a>
+        <a href="<?=$arParams["PATH_TO_BASKET"]?>">
+        <strong>
+	        <?echo $num;?> 
+	        <?=GetMessage("DVS_ITEM");?>
+	        <?echo $arResult['END'];?> 
+	        <br/>
+	        <?=GetMessage("DVS_SUMM");?> 
+	        <?echo round($sum);?> 
+	        <span class="rubl">
+	        	<?=GetMessage("DVS_RUB");?>
+	        </span>
+        </strong>
+        </a>
 <?}?>
     </div>

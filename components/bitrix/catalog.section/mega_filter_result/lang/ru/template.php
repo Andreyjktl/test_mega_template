@@ -20,4 +20,26 @@ $MESS["DVS_ORDER_TO"] = "Под заказ к";
 $MESS["DVS_ORDER"] = "Под заказ";
 $MESS["DVS_MAKE_ORDER"] = "Заказать";
 $MESS["DVS_MORE_THAN"] = "Больше";
+
+$MESS["OAS_TYRE_WIDTH"] = "Ширина"; 
+$MESS["OAS_TYRE_HEIGHT"] = "Высота"; 
+$MESS["OAS_TYRE_DIAMETR"] = "Диаметр"; 
+$MESS["OAS_TYRE_SEASON"] = "Сезон";
+$MESS["OAS_TYRE_SUMMER"] = "Лето";
+$MESS["OAS_TYRE_WINTER"] = "Зима";
+$MESS["OAS_TYRE_PIN"] = "Шипованный";
+
+$MESS["OAS_WHEEL_WIDTH"] = "Ширина";
+$MESS["OAS_WHEEL_DIAMETR"] = "Диаметр";
+$MESS["OAS_WHEEL_ET"] = "Вылет (ЕТ)";
+$MESS["OAS_WHEEL_DIA"] = "(DIA)";
+$MESS["OAS_WHEEL_TYPE"] = "Тип Диска";
+$MESS["OAS_WHEEL_PCD"] = "PCD";
+
+$MESS["OAS_ZAKAZ"] = "Заказать";
+$MESS["OAS_COLOR_ALERT"] = "Цвет может отличаться";
+$MESS["OAS_NO_SALE"] = "Без скидки";
+$MESS["OAS_WITH_SALE"] = "Со скидкой";
+
+
 ?>

@@ -1536,26 +1536,26 @@ div.pager ul {
 	margin: 0;
 }
 div.pager ul li {
-	float: left;
-	color: #000;
-	line-height: 1.585em;
-	font-weight: bold;
-	text-align: center;
-	background: url(images/pager.png) no-repeat 0 0;
-	padding-right: 12px;
-	width: 28px;
-	height: 22px;
-	text-shadow: 0px 1px 0px #fff;
-	-moz-text-shadow: 0px 1px 0px #fff;
-	-webkit-text-shadow: 0px 1px 0px #fff;
+	    float: left;
+    color: #0085C4;
+    line-height: 1.585em;
+    font-weight: bold;
+    text-align: center;
+    /* background: url(/bitrix/templates/test_template/images/pager.png) no-repeat 0 0; */
+    padding-right: 12px;
+    width: 28px;
+    height: 22px;
+    text-shadow: 0px 1px 0px #fff;
+    -moz-text-shadow: 0px 1px 0px #fff;
+    -webkit-text-shadow: 0px 1px 0px #fff;
 }
 div.pager ul li a {
 	float: left;
-	display: block;
-	width: 28px;
-	height: 22px;
-	color: #000;
-	text-decoration: none;
+    display: block;
+    width: 28px;
+    height: 22px;
+    color: #0085C4;
+    text-decoration: none;
 }
 div.pager ul li span {
 	float: left;
@@ -1565,12 +1565,16 @@ div.pager ul li span {
 	padding-top: 1px;
 }
 div.pager ul li.selected {
-	background-position: 0 -22px;
-	color: #fff;
-	cursor: default;
-	text-shadow: 0px 1px 0px #5c5c5c;
-	-moz-text-shadow: 0px 1px 0px #5c5c5c;
-	-webkit-text-shadow: 0px 1px 0px #5c5c5c;
+	background-position: 0 -22px; */
+    color: #fff;
+    cursor: default;
+    /* text-shadow: 0px 1px 0px #5c5c5c; */
+    -moz-text-shadow: 0px 1px 0px #5c5c5c;
+    -webkit-text-shadow: 0px 1px 0px #5c5c5c;
+    BACKGROUND: #0085C4;
+    WIDTH: 20px;
+    border-right: 8px solid white;
+    color: white;
 }
 div.pager ul li.selected a {
 	color: #fff;
@@ -1695,13 +1699,13 @@ div.brands ul {
     list-style-image: none;
     padding: 0;
     margin: 0;
-    /* width: 895px; */
+    min-width: 895px;
 }
 div.brands ul li {
     float: left;
     width: 140px;
     height: 160px;
-    padding: 0 10px 0 0;
+    padding: 0 8px 0 8px;
     overflow: hidden;
 }
 div.brands div.img {
@@ -2461,9 +2465,10 @@ p.link {
 
 /* List Table */
 div.list-table {
-	width: 530px;
-	float: left;
-	margin-bottom: -25px;
+	min-width: 530px;
+    width: 60%;
+    float: right;
+    margin-bottom: -25px;
 }
 div.list-table p.type {
 	font-size: 1.165em;
@@ -2490,7 +2495,7 @@ table.list tr th {
 	background: #d1dadf;
 }
 table.list tr td {
-	font-size: 1.0em;
+	font-size: 1.1em;
 	line-height: 1.295em;
 	padding: 9px 5px 8px 5px;
 	vertical-align: top;
@@ -2501,7 +2506,7 @@ table.list tr td.title {
 	font-weight: bold;
 }
 table.list tr td.presence {
-	width: 68px;
+	width: 78px;
 }
 table.list tr td.price {
 	width: 61px;
@@ -2509,7 +2514,7 @@ table.list tr td.price {
 	white-space: nowrap;
 }
 table.list tr td.number {
-	width: 145px;
+	width: 150px;
 	white-space: nowrap;
 	padding-top: 5px;
 	padding-bottom: 5px;
