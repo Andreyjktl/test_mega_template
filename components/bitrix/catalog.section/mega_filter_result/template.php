@@ -67,8 +67,8 @@
                  foreach($arElement["PRICES"] as $code=>$arPrice){
                      if($arPrice["CAN_ACCESS"]){
                          if($arPrice["DISCOUNT_VALUE"] < $arPrice["VALUE"]){
-                             $price = '<p>'.GetMessage("OAS_NO_SALE").'  <span class="strike">'.$arPrice["VALUE"].' <span class="rubl">'.GetMessage("DVS_RUB").'</span></span></p>
-                                      <p>'.GetMessage("OAS_WITH_SALE").'</p><p class="price">'.round($arPrice["DISCOUNT_VALUE"]).' <span class="rubl">'.GetMessage("DVS_RUB").'</span></p>';
+                             $price = '<p>Без скидки <span class="strike">'.$arPrice["VALUE"].' <span class="rubl">'.GetMessage("DVS_RUB").'</span></span></p>
+                                      <p>Со скидкой</p><p class="price">'.round($arPrice["DISCOUNT_VALUE"]).' <span class="rubl">'.GetMessage("DVS_RUB").'</span></p>';
                              $sale = true;
                          } else {
                              $price = '<p class="price">'.$arPrice["VALUE"].' <span class="rubl">'.GetMessage("DVS_RUB").'</span></p>';
@@ -102,7 +102,7 @@
                     }
                 }
 
-                $buttonText = GetMessage("CATALOG_ADD_TO_BASKET");
+                $buttonText = "В корзину";
                 if ($arElement['PROPERTIES']['order']['VALUE'] == 'Y') {
                     $order = true;
                     $buttonText = GetMessage("DVS_MAKE_ORDER");
@@ -157,7 +157,7 @@
                         '.(($arElement['IBLOCK_ID']=='7')?
                     ('
                         <p style="font-size: 11px; color:grey;">
-                        '.GetMessage("OAS_COLOR_ALERT").'
+                        Цвет может отличаться
                         <img width="12px;" height="12px;" src="images/vopros_32.png" title="Цвет диска на картинке может отличаться от оригинала, смотрите описание в характеристиках или спрашивайте у менеджера."></img>
                         </p>
                          '):'').'
@@ -173,10 +173,10 @@
                 '.(($arElement['IBLOCK_ID']=='5')?
                     ('
                         <table class="param_table">
-                <tr><td class="key"> '.GetMessage("OAS_TYRE_WIDTH").'............ '.$arElement['PROPERTIES']['tyre_width']['VALUE'].' мм</td></tr>
-                <tr><td class="key"> '.GetMessage("OAS_TYRE_HEIGHT").'............. '.$arElement['PROPERTIES']['tyre_height']['VALUE'].' %</td></tr>
-                <tr><td class="key"> '.GetMessage("OAS_TYRE_DIAMETR").'............ '.$arElement['PROPERTIES']['tyre_diameter']['VALUE'].'</td></tr>
-                <tr><td class="key">'.GetMessage("OAS_TYRE_SEASON").'...............
+                <tr><td class="key"> Ширина............ '.$arElement['PROPERTIES']['tyre_width']['VALUE'].' мм</td></tr>
+                <tr><td class="key"> Высота............. '.$arElement['PROPERTIES']['tyre_height']['VALUE'].' %</td></tr>
+                <tr><td class="key"> Диаметр............ '.$arElement['PROPERTIES']['tyre_diameter']['VALUE'].'</td></tr>
+                <tr><td class="key"> Сезон...............
                                  '.(($arElement['PROPERTIES']['model_season']['VALUE'] == 'Зима')?
                                     (' <span class="winter"></span>'):'').'
                                  '.(($arElement['PROPERTIES']['model_season']['VALUE'] == 'Лето')?
@@ -196,12 +196,12 @@
                 '.(($arElement['IBLOCK_ID']=='7')?
                     ('
                        <table class="param_table">
-               <tr><td class="key">'.GetMessage("OAS_WHEEL_WIDTH").'........ '.$arElement['PROPERTIES']['wheels_width']['VALUE'].'J</td></tr>
-                <tr><td class="key">'.GetMessage("OAS_WHEEL_DIAMETR").'....... '.$arElement['PROPERTIES']['wheels_diameter']['VALUE'].'&#8243;</td></tr>
-                <tr><td class="key">'.GetMessage("OAS_WHEEL_PCD").'..............'.$arElement['PROPERTIES']['wheels_aperture']['VALUE'].' мм</td></tr>
-                <tr><td class="key">'.GetMessage("OAS_WHEEL_ET").'...'.$arElement['PROPERTIES']['wheels_gab']['VALUE'].' мм</td></tr>
-                <tr><td class="key">'.GetMessage("OAS_WHEEL_DIA").'..............'.$arElement['PROPERTIES']['wheels_center']['VALUE'].' мм</td></tr>
-                 <tr><td class="key">'.GetMessage("OAS_WHEEL_TYPE").'.........'.$arElement['PROPERTIES']['TIPDISKI']['VALUE'].'</td></tr>
+               <tr><td class="key"> Ширина........ '.$arElement['PROPERTIES']['wheels_width']['VALUE'].'J</td></tr>
+                <tr><td class="key">Диаметр....... '.$arElement['PROPERTIES']['wheels_diameter']['VALUE'].'&#8243;</td></tr>
+                <tr><td class="key">PCD..............'.$arElement['PROPERTIES']['wheels_aperture']['VALUE'].' мм</td></tr>
+                <tr><td class="key">Вылет (ET)...'.$arElement['PROPERTIES']['wheels_gab']['VALUE'].' мм</td></tr>
+                <tr><td class="key">DIA..............'.$arElement['PROPERTIES']['wheels_center']['VALUE'].' мм</td></tr>
+                 <tr><td class="key">Тип диска.........'.$arElement['PROPERTIES']['TIPDISKI']['VALUE'].'</td></tr>
                 
                 </table> 
                    '):'').'
@@ -228,7 +228,7 @@
                     <input type="hidden" name="'.$arParams["ACTION_VARIABLE"].'BUY" value="Y">
                     <div class="tocart buy-i" itemID="'.$arElement['ID'].'" offerStatus="'.($arElement['CATALOG_QUANTITY']==0?'not-available':'available').'">
                             <input type="hidden" id="price'.$arElement['ID'].'" value="'.$iDiscount.'" />
-                            <span class="zakaz">'.GetMessage("OAS_ZAKAZ").' </span>
+                            <span class="zakaz">Заказать </span>
                             <input type="text" onkeyup="validateRange(this,1,'.$arElement['CATALOG_QUANTITY'].');" id="count'.$arElement['ID'].'" name="'.$arParams["PRODUCT_QUANTITY_VARIABLE"].'" value="'.($arElement['CATALOG_QUANTITY']<4?$arElement['CATALOG_QUANTITY']:4).'" size="5" class="text2">
                             <span class="pcs">'.dvsUNIT.'</span>
                             <br> <br>
