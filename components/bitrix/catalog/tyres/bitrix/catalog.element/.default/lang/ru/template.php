@@ -35,4 +35,6 @@ $MESS["DVS_MAKE_ORDER"] = "Заказать";
 $MESS["DVS_ORDER"] = "Под заказ";
 $MESS["DVS_ORDER_TO"] = "Под заказ к";
 $MESS["DVS_IN_BASKET"] = "В корзине";
+
+$MESS["OAS_SHARE"] = "Поделиться";
 ?>

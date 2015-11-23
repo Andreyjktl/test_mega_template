@@ -1,0 +1,45 @@
+div.m_feedback {
+	background-color: #FAFAFA;
+    border: 1px solid #EBEBEB;
+    padding: 20px;
+    width: 300px;
+}
+
+div.m_f-name, div.m_f-email, div.m_f-phone, div.m_f-captcha,  {
+	width:230px; 
+	padding-bottom:0.6em;
+}
+div.m_f-message {
+	width:230px; 
+	padding-bottom:0.4em;
+	padding-top: 10px;
+}
+div.m_f-name input, div.m_f-email input, div.m_f-phone input {
+	width:230px;
+}
+div.m_f-message textarea {
+	width: 220px;
+	padding-top: 10px;
+}
+span.m_f-req {
+	color:red;
+}
+div.m_f-ok-text {
+	color:green; 
+	font-weight:bold; 
+	padding-bottom: 1em;
+	padding-top: 10px;
+}
+
+.m_f_header {
+	color: #EF5524;
+}
+ 
+ p.m_f_data{
+ 	padding-bottom: 10px;
+ 	padding-left: 35px;
+ 	color: #0F85C1;
+ }
+.m_f-text{
+    padding-top: 10px;
+}

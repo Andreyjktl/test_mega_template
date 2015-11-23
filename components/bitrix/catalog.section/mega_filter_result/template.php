@@ -84,9 +84,21 @@
                 } else {
                     $inStock = true;
                     if($arElement['CATALOG_QUANTITY'] > 4) {
-                        $quantity = '>4' . dvsListQUANTITY;
+                        $quantity = dvsListQUANTITY . '>4';
                     } else {
-                        $quantity = $arElement['CATALOG_QUANTITY'] . dvsListQUANTITY;
+                        $quantity = dvsListQUANTITY . $arElement['CATALOG_QUANTITY'];
+                    }
+                }
+
+                $quantity1 = '';
+                if($arElement['CATALOG_QUANTITY'] < 1){
+                    $quantity1 = '<span class="absent">'.dvsListABSENT.'</span>';//***
+                } else {
+                    $inStock = true;
+                    if($arElement['CATALOG_QUANTITY'] > 4) {
+                        $quantity1 = '>4 шт.';
+                    } else {
+                        $quantity1 =  $arElement['CATALOG_QUANTITY'] . 'шт.';
                     }
                 }
 
@@ -137,7 +149,7 @@
                 
                 $arImgs[] = '<td class="mega_result_image">
                     <div><a href="'.$arElement['DETAIL_PAGE_URL'].'">
-                        <img style="float:right; padding-top:20px;" src="'.$picture.'" max-width="150px;" max-width="150px;" "width="'.$width.'" height="'.$height.'" alt="'.$arElement['NAME'].'" id="i'.$arElement['ID'].'" /></a>'.$icons.'
+                        <img style="float:right; padding-top:5px; padding-bottom:5px;" src="'.$picture.'" max-width="150px;" max-width="150px;" "width="'.$width.'" height="'.$height.'" alt="'.$arElement['NAME'].'" id="i'.$arElement['ID'].'" /></a>'.$icons.'
                         
                         </div>
                         <div style="clear:both">
@@ -193,6 +205,13 @@
                 
                 </table> 
                    '):'').'
+                <table class="info_table">
+                    <tr><td>
+                    </td></tr>
+                    <tr><td>
+                    <span> В наличии:</span> '.$quantity1.'
+                    </td></tr>
+                </table> 
                 <p class="'.$class.'"></p>'
                    ;
 
@@ -202,7 +221,7 @@
                $arBuy[] = '<td class="buy" id="'.$this->GetEditAreaId($arElement['ID']).'">
                 <h4 id="name'.$arElement['ID'].'"></h4>
                 
-                <p class="'.$class.'">'.$quantity.'</p>'.$price.'
+                '.$price.'
                 <form action="'.POST_FORM_ACTION_URI.'" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="'.$arParams["ACTION_VARIABLE"].'" value="BUY">
                     <input type="hidden" name="'.$arParams["PRODUCT_ID_VARIABLE"].'" value="'.$arElement["ID"].'">

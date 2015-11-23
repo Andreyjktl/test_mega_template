@@ -16,7 +16,11 @@
                 $height = 200;
             } ?>
             <img border="0" src="<?=$picture?>" width="<?=$width?>" height="<?=$height?>" alt="<?=$arResult["NAME"]?>" title="<?=$arResult["NAME"]?>" />
-<br><br><br><script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="link" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus"></div>
+            <br><br><br>
+            <div class="adv">
+                    <p><?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/trunks.php"), false);?></p>
+            </div>
+            <p><?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/adds/social.php"), false);?></p>
 
         </div>
 
@@ -86,7 +90,8 @@
                         <tr>
                                 <td class="title" id="name<?echo $arOffer['ID'];?>">
                                     <a href="<?echo $arOffer['DETAIL_PAGE_URL'];?>">
-                                        <?echo str_replace(array($arResult['SECTION']['NAME'].' ', $arResult['NAME'].' '), array('', ''), $arOffer['NAME']);?>
+                                       <?echo str_replace("(","",str_replace(")","",str_replace(array($arResult['SECTION']['NAME']
+                                       .' ', $arResult['NAME'].' '), array('', ''), $arOffer['NAME'])));?>
                                     </a>
                                     </td>
                                 <td class="presence"><? echo $quantity; ?></td>

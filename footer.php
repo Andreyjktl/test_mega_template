@@ -129,7 +129,29 @@
 <!-- /Yandex.Metrika counter -->
 					</div>
 					
-        <div class="overlay"></div>
+        <div class="overlay">
+        </div>
+			<a href="#x" class="overlay1" id="feedback"></a> 
+			    <div class="popup1"> 
+					<?$APPLICATION->IncludeComponent(
+						"bitrix:main.feedback", 
+						"mega_main_feedback", 
+						array(
+							"COMPONENT_TEMPLATE" => "mega_main_feedback",
+							"EMAIL_TO" => "andreyjktl@gmail.com",
+							"EVENT_MESSAGE_ID" => array(
+								0 => "7",
+							),
+							"OK_TEXT" => "Спасибо, ваше сообщение принято.",
+							"REQUIRED_FIELDS" => array(
+								0 => "NONE",
+							),
+							"USE_CAPTCHA" => "N"
+						),
+						false
+					);?>
+					<a class="close" title="Закрыть" href="#close"></a> 
+				</div>
 
 
     </body>

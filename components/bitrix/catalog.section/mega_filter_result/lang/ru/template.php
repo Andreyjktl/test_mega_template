@@ -1,45 +1,45 @@
 <?
-$MESS["CATALOG_BUY"] = "Êóïèòü";
-$MESS["CATALOG_ADD"] = "Â êîðçèíó";
-$MESS["CATALOG_COMPARE"] = "Ñðàâíèòü";
-$MESS["CATALOG_NOT_AVAILABLE"] = "(íåò íà ñêëàäå)";
-$MESS["CATALOG_QUANTITY"] = "Êîëè÷åñòâî";
-$MESS["CATALOG_QUANTITY_FROM_TO"] = "Îò #FROM# äî #TO#";
-$MESS["CATALOG_QUANTITY_FROM"] = "Îò #FROM#";
-$MESS["CATALOG_QUANTITY_TO"] = "Äî #TO#";
-$MESS["CT_BCS_QUANTITY"] = "Êîëè÷åñòâî";
-$MESS["CT_BCS_ELEMENT_DELETE_CONFIRM"] = "Áóäåò óäàëåíà âñÿ èíôîðìàöèÿ, ñâÿçàííàÿ ñ ýòîé çàïèñüþ. Ïðîäîëæèòü?";
+$MESS["CATALOG_BUY"] = "ÐšÑƒÐ¿Ð¸Ñ‚ÑŒ";
+$MESS["CATALOG_ADD"] = "Ð’ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ";
+$MESS["CATALOG_COMPARE"] = "Ð¡Ñ€Ð°Ð²Ð½Ð¸Ñ‚ÑŒ";
+$MESS["CATALOG_NOT_AVAILABLE"] = "(Ð½ÐµÑ‚ Ð½Ð° ÑÐºÐ»Ð°Ð´Ðµ)";
+$MESS["CATALOG_QUANTITY"] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾";
+$MESS["CATALOG_QUANTITY_FROM_TO"] = "ÐžÑ‚ #FROM# Ð´Ð¾ #TO#";
+$MESS["CATALOG_QUANTITY_FROM"] = "ÐžÑ‚ #FROM#";
+$MESS["CATALOG_QUANTITY_TO"] = "Ð”Ð¾ #TO#";
+$MESS["CT_BCS_QUANTITY"] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾";
+$MESS["CT_BCS_ELEMENT_DELETE_CONFIRM"] = "Ð‘ÑƒÐ´ÐµÑ‚ ÑƒÐ´Ð°Ð»ÐµÐ½Ð° Ð²ÑÑ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ, ÑÐ²ÑÐ·Ð°Ð½Ð½Ð°Ñ Ñ ÑÑ‚Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÑŒÑŽ. ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ?";
 
 $MESS["DVS_RUB"] = "P";
-$MESS["DVS_PIN"] = "øèï";
-$MESS["DVS_NOT_FOUND"] = "Ïî çàäàííûì ïàðàìåòðàì, òîâàðû íå íàéäåíû";
-$MESS["CATALOG_ADD_TO_BASKET"] = 'Â êîðçèíó';
-$MESS["DVS_IN_BASKET"] = "Â êîðçèíå";
-$MESS["DVS_MORE_THAN"] = "Áîëüøå";
-$MESS["DVS_ORDER_TO"] = "Ïîä çàêàç ê";
-$MESS["DVS_ORDER"] = "Ïîä çàêàç";
-$MESS["DVS_MAKE_ORDER"] = "Çàêàçàòü";
-$MESS["DVS_MORE_THAN"] = "Áîëüøå";
+$MESS["DVS_PIN"] = "ÑˆÐ¸Ð¿";
+$MESS["DVS_NOT_FOUND"] = "ÐŸÐ¾ Ð·Ð°Ð´Ð°Ð½Ð½Ñ‹Ð¼ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼, Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹";
+$MESS["CATALOG_ADD_TO_BASKET"] = 'Ð’ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ';
+$MESS["DVS_IN_BASKET"] = "Ð’ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ðµ";
+$MESS["DVS_MORE_THAN"] = "Ð‘Ð¾Ð»ÑŒÑˆÐµ";
+$MESS["DVS_ORDER_TO"] = "ÐŸÐ¾Ð´ Ð·Ð°ÐºÐ°Ð· Ðº";
+$MESS["DVS_ORDER"] = "ÐŸÐ¾Ð´ Ð·Ð°ÐºÐ°Ð·";
+$MESS["DVS_MAKE_ORDER"] = "Ð—Ð°ÐºÐ°Ð·Ð°Ñ‚ÑŒ";
+$MESS["DVS_MORE_THAN"] = "Ð‘Ð¾Ð»ÑŒÑˆÐµ";
 
-$MESS["OAS_TYRE_WIDTH"] = "Øèðèíà"; 
-$MESS["OAS_TYRE_HEIGHT"] = "Âûñîòà"; 
-$MESS["OAS_TYRE_DIAMETR"] = "Äèàìåòð"; 
-$MESS["OAS_TYRE_SEASON"] = "Ñåçîí";
-$MESS["OAS_TYRE_SUMMER"] = "Ëåòî";
-$MESS["OAS_TYRE_WINTER"] = "Çèìà";
-$MESS["OAS_TYRE_PIN"] = "Øèïîâàííûé";
+$MESS["OAS_TYRE_WIDTH"] = "Ð¨Ð¸Ñ€Ð¸Ð½Ð°"; 
+$MESS["OAS_TYRE_HEIGHT"] = "Ð’Ñ‹ÑÐ¾Ñ‚Ð°"; 
+$MESS["OAS_TYRE_DIAMETR"] = "Ð”Ð¸Ð°Ð¼ÐµÑ‚Ñ€"; 
+$MESS["OAS_TYRE_SEASON"] = "Ð¡ÐµÐ·Ð¾Ð½";
+$MESS["OAS_TYRE_SUMMER"] = "Ð›ÐµÑ‚Ð¾";
+$MESS["OAS_TYRE_WINTER"] = "Ð—Ð¸Ð¼Ð°";
+$MESS["OAS_TYRE_PIN"] = "Ð¨Ð¸Ð¿Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹";
 
-$MESS["OAS_WHEEL_WIDTH"] = "Øèðèíà";
-$MESS["OAS_WHEEL_DIAMETR"] = "Äèàìåòð";
-$MESS["OAS_WHEEL_ET"] = "Âûëåò (ÅÒ)";
+$MESS["OAS_WHEEL_WIDTH"] = "Ð¨Ð¸Ñ€Ð¸Ð½Ð°";
+$MESS["OAS_WHEEL_DIAMETR"] = "Ð”Ð¸Ð°Ð¼ÐµÑ‚Ñ€";
+$MESS["OAS_WHEEL_ET"] = "Ð’Ñ‹Ð»ÐµÑ‚ (Ð•Ð¢)";
 $MESS["OAS_WHEEL_DIA"] = "(DIA)";
-$MESS["OAS_WHEEL_TYPE"] = "Òèï Äèñêà";
+$MESS["OAS_WHEEL_TYPE"] = "Ð¢Ð¸Ð¿ Ð”Ð¸ÑÐºÐ°";
 $MESS["OAS_WHEEL_PCD"] = "PCD";
 
-$MESS["OAS_ZAKAZ"] = "Çàêàçàòü";
-$MESS["OAS_COLOR_ALERT"] = "Öâåò ìîæåò îòëè÷àòüñÿ";
-$MESS["OAS_NO_SALE"] = "Áåç ñêèäêè";
-$MESS["OAS_WITH_SALE"] = "Ñî ñêèäêîé";
-
+$MESS["OAS_ZAKAZ"] = "Ð—Ð°ÐºÐ°Ð·Ð°Ñ‚ÑŒ";
+$MESS["OAS_COLOR_ALERT"] = "Ð¦Ð²ÐµÑ‚ Ð¼Ð¾Ð¶ÐµÑ‚ Ð¾Ñ‚Ð»Ð¸Ñ‡Ð°Ñ‚ÑŒÑÑ";
+$MESS["OAS_NO_SALE"] = "Ð‘ÐµÐ· ÑÐºÐ¸Ð´ÐºÐ¸";
+$MESS["OAS_WITH_SALE"] = "Ð¡Ð¾ ÑÐºÐ¸Ð´ÐºÐ¾Ð¹";
+$MESS["OASListQUANTITY"] = "Ð’ Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ð¸ ";
 
 ?>

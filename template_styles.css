@@ -1130,7 +1130,7 @@ div.filter {
 	color: #453333;
 	margin-top: 0px;
 	position: relative;
-	z-index: 200;
+	z-index: 90;
 }
 
 
@@ -3282,7 +3282,7 @@ section {
 .buy{
 	text-align: center;
 	width: 170px;
-	background-color: #EFEFEF;
+	background-color: #F4F4F4;
 }
 
 .mega_result_image{
@@ -3290,14 +3290,18 @@ section {
 		width: 150px;
 }
 
-.param_table{
+.info_table{
 	float: right;
    font-weight: normal;
     font-size: 12px;
     margin: 10px;
-    width: 200px;
-    /* vertical-align: middle; */
+    width: 150px;
     color: #444444;
+}
+
+.info_table tr td{
+	font-weight: normal;
+	font-size: larger;
 }
 
 .param_table{
@@ -3306,7 +3310,6 @@ section {
     font-size: 12px;
     margin: 10px;
     width: 200px;
-    /* vertical-align: middle; */
     color: #444444;
 }
 
@@ -3545,3 +3548,72 @@ div.soc_share{
     margin-top: 10px;
     margin-right: 20px;
 }
+
+
+
+.overlay1 { 
+background-color: rgba(0, 0, 0, 0.7); 
+bottom: 0; 
+cursor: default; 
+left: 0; 
+opacity: 0; 
+position: fixed; 
+right: 0; 
+top: 0; 
+visibility: hidden; 
+z-index: 600; 
+-webkit-transition: opacity .5s; 
+-moz-transition: opacity .5s; 
+-ms-transition: opacity .5s; 
+-o-transition: opacity .5s; 
+transition: opacity .5s; 
+} 
+.overlay1:target { 
+visibility: visible; 
+opacity: 1; 
+} 
+.popup1 { 
+	background-color: #fff;
+    display: inline-block;
+    left: 50%;
+    opacity: 0;
+    position: fixed;
+    text-align: justify;
+    font: 14px Helvetica, Arial, Sans-Serif;
+    top: 40%;
+    visibility: hidden;
+    z-index: 700;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+   -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s; 
+} 
+.overlay1:target+.popup1 { 
+top: 50%; 
+opacity: 1; 
+visibility: visible; 
+} 
+.close { 
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    text-decoration: none !important;
+    background: #0F85C1;
+    top: 10px;
+    width: 24px;
+} 
+.close:before { 
+color: rgba(255, 255, 255, 0.9); 
+content: "X"; 
+font-size: 14px; 
+text-shadow: 0 -1px rgba(0, 0, 0, 0.9); 
+} 
+.close:hover { 
+background-color: rgba(64, 128, 128, 0.8); 
+} 
