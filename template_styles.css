@@ -642,7 +642,7 @@ div.panel {
     /* border: 0px solid #0099cc; */
     left: 0px;
     bottom: -1px;
-    z-index: 300;
+    z-index: 100;
     border-top: 2px solid grey;
     border-bottom: 2px solid grey;
 }
@@ -689,7 +689,7 @@ div.menu {
     font-weight: bold;
     color: #fff;
     position: relative;
-    z-index: 300;
+    z-index: 100;
 }
 div.menu ul {
 float: left;
@@ -3182,15 +3182,15 @@ section {
 
 
 .selectors{
-	  border: 0px solid rgb(231, 231, 231);
-  border-radius: 0px;
-  padding: 3px;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  color: #0085c1;
-     width: 100%;
-  font-weight:700;
-      background: #EDF6FC;
+    border-top: 1px solid rgb(231, 231, 231);
+    border-bottom: 1px solid rgb(231, 231, 231);
+    padding: 3px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    color: #0085c1;
+    width: 100%;
+    font-weight: 700;
+    /* background: #EDF6FC; */
 
  }
 .selectors tbody tr{
