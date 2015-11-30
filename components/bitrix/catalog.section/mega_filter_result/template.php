@@ -258,9 +258,135 @@
         </div>
     </div>
 </div>
-<?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
-   <br /><?=$arResult["NAV_STRING"]?>
-<?endif;?>
+            <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
+               <br /><?=$arResult["NAV_STRING"]?>
+            <?endif;?>
 <?}else{
-    echo GetMessage("DVS_NOT_FOUND");
+    
+     echo GetMessage("DVS_NOT_FOUND") ; 
+     echo "<br>";
+    echo GetMessage("OAS_CALL");
+    echo "<h3>8 (351) 751 09 19</h3>";
+
+
+   $APPLICATION->IncludeComponent(
+    "bitrix:catalog.bigdata.products", 
+    "main_template", 
+    array(
+        "COMPONENT_TEMPLATE" => "main_template",
+        "RCM_TYPE" => "bestsell",
+        "ID" => $_REQUEST["PRODUCT_ID"],
+        "IBLOCK_TYPE" => "catalog",
+        "IBLOCK_ID" => "",
+        "SHOW_FROM_SECTION" => "N",
+        "SECTION_ID" => "",
+        "SECTION_CODE" => "",
+        "SECTION_ELEMENT_ID" => "",
+        "SECTION_ELEMENT_CODE" => "",
+        "DEPTH" => "",
+        "HIDE_NOT_AVAILABLE" => "Y",
+        "SHOW_DISCOUNT_PERCENT" => "N",
+        "PRODUCT_SUBSCRIPTION" => "N",
+        "SHOW_NAME" => "Y",
+        "SHOW_IMAGE" => "Y",
+        "MESS_BTN_BUY" => "Купить",
+        "MESS_BTN_DETAIL" => "Подробнее",
+        "MESS_BTN_SUBSCRIBE" => "Подписаться",
+        "PAGE_ELEMENT_COUNT" => "5",
+        "LINE_ELEMENT_COUNT" => "5",
+        "TEMPLATE_THEME" => "blue",
+        "DETAIL_URL" => "",
+        "CACHE_TYPE" => "A",
+        "CACHE_TIME" => "3600",
+        "CACHE_GROUPS" => "Y",
+        "SHOW_OLD_PRICE" => "Y",
+        "PRICE_CODE" => array(
+            0 => "Продажи через сайт",
+        ),
+        "SHOW_PRICE_COUNT" => "1",
+        "PRICE_VAT_INCLUDE" => "Y",
+        "CONVERT_CURRENCY" => "N",
+        "BASKET_URL" => "/personal/cart/",
+        "ACTION_VARIABLE" => "action",
+        "PRODUCT_ID_VARIABLE" => "id",
+        "PRODUCT_QUANTITY_VARIABLE" => "",
+        "ADD_PROPERTIES_TO_BASKET" => "Y",
+        "PRODUCT_PROPS_VARIABLE" => "prop",
+        "PARTIAL_PRODUCT_PROPERTIES" => "Y",
+        "USE_PRODUCT_QUANTITY" => "Y",
+        "SHOW_PRODUCTS_4" => "Y",
+        "PROPERTY_CODE_4" => array(
+            0 => "model_season",
+            1 => "model_pin",
+            2 => "",
+        ),
+        "CART_PROPERTIES_4" => array(
+            0 => "model_season",
+            1 => "model_pin",
+            2 => "",
+        ),
+        "ADDITIONAL_PICT_PROP_4" => "model_more_photos",
+        "LABEL_PROP_4" => "-",
+        "SHOW_PRODUCTS_6" => "Y",
+        "PROPERTY_CODE_6" => array(
+            0 => "CML2_ATTRIBUTES",
+            1 => "",
+        ),
+        "CART_PROPERTIES_6" => array(
+            0 => "KOL_VO_OTVERSTIY",
+            1 => "",
+        ),
+        "ADDITIONAL_PICT_PROP_6" => "wheels_more_photos",
+        "LABEL_PROP_6" => "-",
+        "PROPERTY_CODE_5" => array(
+            0 => "tyre_width",
+            1 => "tyre_height",
+            2 => "tyre_diameter",
+            3 => "model_season",
+            4 => "model_pin",
+            5 => "",
+        ),
+        "CART_PROPERTIES_5" => array(
+            0 => "tyre_width",
+            1 => "tyre_height",
+            2 => "tyre_diameter",
+            3 => "model_season",
+            4 => "model_pin",
+            5 => "",
+        ),
+        "ADDITIONAL_PICT_PROP_5" => "MORE_PHOTO",
+        "OFFER_TREE_PROPS_5" => array(
+            0 => "tyre_width",
+            1 => "tyre_height",
+            2 => "tyre_diameter",
+            3 => "model_season",
+            4 => "model_pin",
+        ),
+        "PROPERTY_CODE_7" => array(
+            0 => "wheels_diameter",
+            1 => "wheels_width",
+            2 => "wheels_aperture",
+            3 => "wheels_gab",
+            4 => "wheels_center",
+            5 => "",
+        ),
+        "CART_PROPERTIES_7" => array(
+            0 => "wheels_diameter",
+            1 => "wheels_width",
+            2 => "wheels_aperture",
+            3 => "wheels_gab",
+            4 => "wheels_center",
+            5 => "",
+        ),
+        "ADDITIONAL_PICT_PROP_7" => "MORE_PHOTO",
+        "OFFER_TREE_PROPS_7" => array(
+            0 => "wheels_diameter",
+            1 => "wheels_width",
+            2 => "wheels_aperture",
+            3 => "wheels_gab",
+            4 => "wheels_center",
+        )
+    ),
+    false
+    );
 }?>

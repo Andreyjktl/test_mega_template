@@ -147,7 +147,15 @@ if ($sale || $hit) {
                     echo '<p class="link"><a href="#photos">'.GetMessage("DVS_V_PHOTO").'</a></p>';
                 if($arResult['SIMILAR_COUNT']>0)
                     echo '<p class="link"><a href="#similar">'.GetMessage("DVS_V_SIMILAR").'</a></p>';
-                ?> </div>
+                ?> 
+                <!-- Цвет -->
+                <br>
+                <? if($arResult['LINK_MODEL']['PROPERTIES']['BREND_DISKA']['VALUE'] == "К&К")
+                    echo '<p class="link"><a href="'.SITE_DIR.'./articles/110309/#kik" target="_blank">Цвета дисков К&К</a></p>';
+                    
+                ?> 
+
+        </div>
 
         <div class="adv">
             <p><?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/trunks.php"), false);?></p>
@@ -175,7 +183,9 @@ if(strlen($arResult['LINK_MODEL']['DETAIL_TEXT'])>0||strlen($featureText)>0){?>
                         echo '<li class="selected"><a href="#tab-overview"><span>'.GetMessage("DVS_DET").'</span></a></li>';
                     if(strlen($featureText)>0)
                         echo '<li'.(strlen($arResult['LINK_MODEL']['DETAIL_TEXT'])==0?' class="selected"':'').'><a href="#tab-features"><span>'.GetMessage("DVS_FEATURES").'</span></a></li>';
+                    
                     ?>
+
 
                 </ul>
                 <div class="clear"></div>
