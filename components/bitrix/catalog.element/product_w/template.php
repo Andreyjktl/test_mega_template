@@ -152,7 +152,29 @@ if ($sale || $hit) {
                 <br>
                 <? if($arResult['LINK_MODEL']['PROPERTIES']['BREND_DISKA']['VALUE'] == "К&К")
                     echo '<p class="link"><a href="'.SITE_DIR.'./articles/110309/#kik" target="_blank">Цвета дисков К&К</a></p>';
-                    
+                  if($arResult['LINK_MODEL']['PROPERTIES']['BREND_DISKA']['VALUE'] == "Borbet")
+                    echo '<p class="link"><a href="'.SITE_DIR.'./articles/110309/#borbet" target="_blank">Цвета дисков Borbet</a></p>';
+                  if($arResult['LINK_MODEL']['PROPERTIES']['BREND_DISKA']['VALUE'] == "IFREE")
+                    echo '<p class="link"><a href="'.SITE_DIR.'./articles/110309/#ifree" target="_blank">Цвета дисков IFREE</a></p>';
+                  if($arResult['LINK_MODEL']['PROPERTIES']['BREND_DISKA']['VALUE'] == "Slik")
+                    echo '<p class="link"><a href="'.SITE_DIR.'./articles/110309/#slik" target="_blank">Цвета дисков Slik</a></p>';
+                  if($arResult['LINK_MODEL']['PROPERTIES']['BREND_DISKA']['VALUE'] == "СКАД")
+                    echo '<p class="link"><a href="'.SITE_DIR.'./articles/110309/#skad" target="_blank">Цвета дисков СКАД</a></p>';
+                  if($arResult['LINK_MODEL']['PROPERTIES']['BREND_DISKA']['VALUE'] == "OZ Racing")
+                    echo '<p class="link"><a href="'.SITE_DIR.'./articles/110309/#oz" target="_blank">Цвета дисков OZ Racing</a></p>';
+                  if($arResult['LINK_MODEL']['PROPERTIES']['BREND_DISKA']['VALUE'] == "MAK")
+                    echo '<p class="link"><a href="'.SITE_DIR.'./articles/110309/#mak" target="_blank">Цвета дисков MAK</a></p>';
+                  if($arResult['LINK_MODEL']['PROPERTIES']['BREND_DISKA']['VALUE'] == "CatWild")
+                    echo '<p class="link"><a href="'.SITE_DIR.'./articles/110309/#catwild" target="_blank">Цвета дисков CatWild</a></p>';
+                 if($arResult['LINK_MODEL']['PROPERTIES']['BREND_DISKA']['VALUE'] == "Konig")
+                    echo '<p class="link"><a href="'.SITE_DIR.'./articles/110309/#konig" target="_blank">Цвета дисков Konig</a></p>';
+                  if($arResult['LINK_MODEL']['PROPERTIES']['BREND_DISKA']['VALUE'] == "Replica Concept")
+                    echo '<p class="link"><a href="'.SITE_DIR.'./articles/110309/#replica" target="_blank">Цвета дисков Replica Concept</a></p>';
+                  if($arResult['LINK_MODEL']['PROPERTIES']['BREND_DISKA']['VALUE'] == "Replica LA")
+                    echo '<p class="link"><a href="'.SITE_DIR.'./articles/110309/#replica" target="_blank">Цвета дисков Replica LA</a></p>';
+                  if($arResult['LINK_MODEL']['PROPERTIES']['BREND_DISKA']['VALUE'] == "Replay")
+                    echo '<p class="link"><a href="'.SITE_DIR.'./articles/110309/#replica" target="_blank">Цвета дисков Replay</a></p>';
+                     
                 ?> 
 
         </div>
