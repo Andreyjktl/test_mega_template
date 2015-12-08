@@ -44,7 +44,7 @@ foreach($arResult["PRICES"] as $code => $arPrice){
     }
 }
 if($iPrice > $iDiscount){
-    $price = '<p><span class="strike">'.$iPrice.' <span class="rubl">'.GetMessage("DVS_RUB").'</span></span> ('.($iDiscountDiff).' <span class="rubl">'.GetMessage("DVS_RUB").'</span>)</p>
+    $price = '<p><span class="strike">'.$iPrice.' <span class="rubl">'.GetMessage("DVS_RUB").'</span></span></p>
               <p class="price">'.$iDiscount.' <span class="rubl">'.GetMessage("DVS_RUB").'</span> ('.GetMessage("DVS_ONE_TYRES").')</p>';
     $sale = true;
 } else {
