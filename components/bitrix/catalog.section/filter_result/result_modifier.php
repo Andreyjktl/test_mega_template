@@ -6,13 +6,14 @@ foreach($arResult['ITEMS'] as $items){
         array('IBLOCK_ID'=>$items['PROPERTIES']['model']['LINK_IBLOCK_ID'], 'ID'=>$items['PROPERTIES']['model']['VALUE'], 'ACTIVE'=>'Y'),
         false,
         false,
-        array('ID', 'IBLOCK_ID', 'NAME', 'PREVIEW_PICTURE', 'PROPERTY_*')
+        array('ID', 'IBLOCK_ID', 'NAME', 'PREVIEW_PICTURE', 'DETAIL_PICTURE',  'PROPERTY_*')
     );
 
     if ($obElement = $rsElement->GetNextElement()) {
         $arFields = $obElement->GetFields();
 
         $items['PREVIEW_PICTURE'] = CFile::GetFileArray($arFields['PREVIEW_PICTURE']);
+        $items['DETAIL_PICTURE'] = CFile::GetFileArray($arFields['DETAIL_PICTURE']);
         $items['PROPERTIES'] = array_merge($items['PROPERTIES'], $obElement->GetProperties());
     }
 

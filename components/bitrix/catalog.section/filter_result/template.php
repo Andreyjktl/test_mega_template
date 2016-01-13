@@ -3,11 +3,15 @@
 <div class="catalog">
     <div class="overflow_left">
         <table class="catalog">
+                <? // Переменная - счетчик картинок?>
+        <?$img_count = 0?>
     <?foreach($arResult["ITEMS"] as $arLine):?>
             <?
             $arImgs = $arData = array();
 
             foreach($arLine as $arElement):?>
+                        <? //Счетчик картинок ?>
+            <?$img_count++?>
                 <?
 
                 $this->AddEditAction($arElement['ID'], $arElement['EDIT_LINK'], CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "ELEMENT_EDIT"));
@@ -128,7 +132,19 @@
                     $class = "outofstock";
                 }
 
-                $arImgs[] = '<td><div><a href="'.$arElement['DETAIL_PAGE_URL'].'"><img src="'.$picture.'" width="'.$width.'" height="'.$height.'" alt="'.$arElement['NAME'].'" id="i'.$arElement['ID'].'" /></a>'.$icons.'</div></td>';
+                $arImgs[] = '<td>
+                <div><a href="#big-img-'.$img_count.'">
+                <img src="'.$picture.'" width="'.$width.'" height="'.$height.'" alt="'.$arElement['NAME'].'" id="i'.$arElement['ID'].'" /></a>'.$icons.'
+                </div>
+                     <div class="overlay">
+                </td>
+                                            </div>
+                              <a href="#x" class="overlay1" id="big-img-'.$img_count.'"></a> 
+                              <div class="popup1"> 
+                               <img src="'.$arElement['DETAIL_PICTURE']['SRC'].'" width=auto height="500px"/>
+                            
+                                <a class="close" title="Закрыть" href="#close"></a> 
+                            </div>';
 
                 $arData[] = '<td id="'.$this->GetEditAreaId($arElement['ID']).'">
                 <h4 id="name'.$arElement['ID'].'">
@@ -155,10 +171,12 @@
                     </div>
                 </form>';
         ?>
+
             <?endforeach;?>
             <tr class="img"><?echo implode('', $arImgs);?></tr>
             <tr class="txt"><?echo implode('', $arData);?></tr>
     <?endforeach;?>
+
         </table>
     </div>
 </div>
@@ -168,3 +186,4 @@
 <?}else{
     echo GetMessage("DVS_NOT_FOUND");
 }?>
+

@@ -9,8 +9,11 @@
 
         <div class="mega_result_table">
         <table class="catalog">
+        <? // Переменная - счетчик картинок?>
+        <?$img_count = 0?>
     <?foreach($arResult["ITEMS"] as $arLine):?>
-
+            <? //Счетчик картинок ?>
+            <?$img_count++?>
             <?
             $arImgs = $arData = $arBuy = array();
 
@@ -148,17 +151,29 @@
                 }
                 
                 $arImgs[] = '<td class="mega_result_image">
-                    <div><a href="'.$arElement['DETAIL_PAGE_URL'].'">
+                    <div><a href="#big-img-'.$img_count.'">
                         <img style="float:right; padding-top:5px; padding-bottom:5px;" src="'.$picture.'" max-width="150px;" max-width="150px;" "width="'.$width.'" height="'.$height.'" alt="'.$arElement['NAME'].'" id="i'.$arElement['ID'].'" /></a>'.$icons.'
                         
                         </div>
                         <div style="clear:both">
 
+
+                        <a href="#big-img-'.$img_count.'"><img src="../images/big-img.png" width="25px" height="25px" style="margin-top:-50px;" alt="Увеличить"></a>
+                         <div class="overlay">
+                            </div>
+                              <a href="#x" class="overlay1" id="big-img-'.$img_count.'"></a> 
+                              <div class="popup1"> 
+                               <img src="'.$arElement['DETAIL_PICTURE']['SRC'].'" width=auto height="500px"/>
+                            
+                                <a class="close" title="Закрыть" href="#close"></a> 
+                            </div>
+
+
                         '.(($arElement['IBLOCK_ID']=='7')?
                     ('
                         <p style="font-size: 11px; color:grey;">
                         '.GetMessage("OAS_COLOR_ALERT").'
-                        <img width="12px;" height="12px;" src="images/vopros_32.png" title="Цвет диска на картинке может отличаться от оригинала, смотрите описание в характеристиках или спрашивайте у менеджера."></img>
+                        <img width="12px;" height="12px;" src="../images/vopros_32.png" title="Цвет диска на картинке может отличаться от оригинала, смотрите описание в характеристиках или спрашивайте у менеджера."></img>
                         </p>
                          '):'').'
                         </div>

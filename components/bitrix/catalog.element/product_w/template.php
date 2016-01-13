@@ -1,4 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+
 <?
 
 $isTyre = $arResult["IBLOCK_ID"] == "5";
@@ -92,6 +93,8 @@ if ($sale || $hit) {
 }
 */ ?>
 
+
+
 <? //echo "<pre>";  print_r($arResult); echo "</pre>"; ?>
 <!-- Item Details -->
 <div class="item">
@@ -105,8 +108,12 @@ if ($sale || $hit) {
             $height  = 200;
         }?>
         <div class="preview" id="picture">
+               <a href="#big-img"> 
                 <img src="<?echo $picture?>" width="<?echo $width?>" height="<?echo $height?>" alt="<?echo $arResult['LINK_MODEL']['NAME']?>" />
-                <?echo $icons;?>
+                </a>
+
+
+             <?echo $icons;?>
         </div>
 
         <div class="item-info">
@@ -178,6 +185,7 @@ if ($sale || $hit) {
                 ?> 
 
         </div>
+
 
         <div class="adv">
             <p><?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/trunks.php"), false);?></p>
@@ -260,96 +268,108 @@ $arrFilter = array_merge(
     $arResult['SIMILAR_FILTER']
 );
 $APPLICATION->IncludeComponent(
-	"bitrix:catalog.section", 
-	"similar_t", 
-	array(
-		"IBLOCK_TYPE" => "catalog",
-		"IBLOCK_ID" => $arParams['IBLOCK_ID'],
-		"SECTION_ID" => "",
-		"SECTION_CODE" => "",
-		"SECTION_USER_FIELDS" => array(
-			0 => "",
-			1 => "",
-		),
-		"ELEMENT_SORT_FIELD" => "rand",
-		"ELEMENT_SORT_ORDER" => "asc",
-		"FILTER_NAME" => "arrFilter",
-		"INCLUDE_SUBSECTIONS" => "N",
-		"SHOW_ALL_WO_SECTION" => "Y",
-		"PAGE_ELEMENT_COUNT" => "4",
-		"LINE_ELEMENT_COUNT" => "4",
-		"PROPERTY_CODE" => array(
-			0 => "",
-			1 => "model",
-			2 => "tyre_diameter",
-			3 => "tyre_width",
-			4 => "tyre_height",
-			5 => "tyre_load",
-			6 => "tyre_speed",
-			7 => "tyre_on_index",
-			8 => "",
-		),
-		"SECTION_URL" => "",
-		"DETAIL_URL" => "",
-		"BASKET_URL" => "/personal/basket.php",
-		"ACTION_VARIABLE" => "action",
-		"PRODUCT_ID_VARIABLE" => "id",
-		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
-		"PRODUCT_PROPS_VARIABLE" => "prop",
-		"SECTION_ID_VARIABLE" => "SECTION_ID",
-		"AJAX_MODE" => "Y",
-		"AJAX_OPTION_SHADOW" => "Y",
-		"AJAX_OPTION_JUMP" => "Y",
-		"AJAX_OPTION_STYLE" => "Y",
-		"AJAX_OPTION_HISTORY" => "N",
-		"CACHE_TYPE" => "A",
-		"CACHE_TIME" => "36000000",
-		"CACHE_GROUPS" => "Y",
-		"META_KEYWORDS" => "-",
-		"META_DESCRIPTION" => "-",
-		"BROWSER_TITLE" => "-",
-		"ADD_SECTIONS_CHAIN" => "N",
-		"DISPLAY_COMPARE" => "N",
-		"SET_TITLE" => "N",
-		"SET_STATUS_404" => "N",
-		"CACHE_FILTER" => "N",
-		      "PRICE_CODE" => array(
+    "bitrix:catalog.section", 
+    "similar_t", 
+    array(
+        "IBLOCK_TYPE" => "catalog",
+        "IBLOCK_ID" => $arParams['IBLOCK_ID'],
+        "SECTION_ID" => "",
+        "SECTION_CODE" => "",
+        "SECTION_USER_FIELDS" => array(
+            0 => "",
+            1 => "",
+        ),
+        "ELEMENT_SORT_FIELD" => "rand",
+        "ELEMENT_SORT_ORDER" => "asc",
+        "FILTER_NAME" => "arrFilter",
+        "INCLUDE_SUBSECTIONS" => "N",
+        "SHOW_ALL_WO_SECTION" => "Y",
+        "PAGE_ELEMENT_COUNT" => "4",
+        "LINE_ELEMENT_COUNT" => "4",
+        "PROPERTY_CODE" => array(
+            0 => "",
+            1 => "model",
+            2 => "tyre_diameter",
+            3 => "tyre_width",
+            4 => "tyre_height",
+            5 => "tyre_load",
+            6 => "tyre_speed",
+            7 => "tyre_on_index",
+            8 => "",
+        ),
+        "SECTION_URL" => "",
+        "DETAIL_URL" => "",
+        "BASKET_URL" => "/personal/basket.php",
+        "ACTION_VARIABLE" => "action",
+        "PRODUCT_ID_VARIABLE" => "id",
+        "PRODUCT_QUANTITY_VARIABLE" => "quantity",
+        "PRODUCT_PROPS_VARIABLE" => "prop",
+        "SECTION_ID_VARIABLE" => "SECTION_ID",
+        "AJAX_MODE" => "Y",
+        "AJAX_OPTION_SHADOW" => "Y",
+        "AJAX_OPTION_JUMP" => "Y",
+        "AJAX_OPTION_STYLE" => "Y",
+        "AJAX_OPTION_HISTORY" => "N",
+        "CACHE_TYPE" => "A",
+        "CACHE_TIME" => "36000000",
+        "CACHE_GROUPS" => "Y",
+        "META_KEYWORDS" => "-",
+        "META_DESCRIPTION" => "-",
+        "BROWSER_TITLE" => "-",
+        "ADD_SECTIONS_CHAIN" => "N",
+        "DISPLAY_COMPARE" => "N",
+        "SET_TITLE" => "N",
+        "SET_STATUS_404" => "N",
+        "CACHE_FILTER" => "N",
+              "PRICE_CODE" => array(
             0 => "Продажи через сайт",
         ),
         "USE_PRICE_COUNT" => "N",
         "SHOW_PRICE_COUNT" => "1",
         "PRICE_VAT_INCLUDE" => "N",
         "PRICE_VAT_SHOW_VALUE" => "N",
-		"PRODUCT_PROPERTIES" => array(
-		),
-		"USE_PRODUCT_QUANTITY" => "Y",
-		"DISPLAY_TOP_PAGER" => "N",
-		"DISPLAY_BOTTOM_PAGER" => "N",
-		"PAGER_TITLE" => "",
-		"PAGER_SHOW_ALWAYS" => "N",
-		"PAGER_TEMPLATE" => "",
-		"PAGER_DESC_NUMBERING" => "N",
-		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-		"PAGER_SHOW_ALL" => "N",
-		"AJAX_OPTION_ADDITIONAL" => "",
-		"COMPONENT_TEMPLATE" => "similar_t",
-		"ELEMENT_SORT_FIELD2" => "id",
-		"ELEMENT_SORT_ORDER2" => "desc",
-		"HIDE_NOT_AVAILABLE" => "Y",
-		"OFFERS_LIMIT" => "5",
-		"BACKGROUND_IMAGE" => "-",
-		"SEF_MODE" => "N",
-		"SET_BROWSER_TITLE" => "Y",
-		"SET_META_KEYWORDS" => "Y",
-		"SET_META_DESCRIPTION" => "Y",
-		"SET_LAST_MODIFIED" => "N",
-		"USE_MAIN_ELEMENT_SECTION" => "N",
-		"CONVERT_CURRENCY" => "N",
-		"ADD_PROPERTIES_TO_BASKET" => "Y",
-		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PAGER_BASE_LINK_ENABLE" => "N",
-		"SHOW_404" => "N",
-		"MESSAGE_404" => ""
-	),
-	false
+        "PRODUCT_PROPERTIES" => array(
+        ),
+        "USE_PRODUCT_QUANTITY" => "Y",
+        "DISPLAY_TOP_PAGER" => "N",
+        "DISPLAY_BOTTOM_PAGER" => "N",
+        "PAGER_TITLE" => "",
+        "PAGER_SHOW_ALWAYS" => "N",
+        "PAGER_TEMPLATE" => "",
+        "PAGER_DESC_NUMBERING" => "N",
+        "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+        "PAGER_SHOW_ALL" => "N",
+        "AJAX_OPTION_ADDITIONAL" => "",
+        "COMPONENT_TEMPLATE" => "similar_t",
+        "ELEMENT_SORT_FIELD2" => "id",
+        "ELEMENT_SORT_ORDER2" => "desc",
+        "HIDE_NOT_AVAILABLE" => "Y",
+        "OFFERS_LIMIT" => "5",
+        "BACKGROUND_IMAGE" => "-",
+        "SEF_MODE" => "N",
+        "SET_BROWSER_TITLE" => "Y",
+        "SET_META_KEYWORDS" => "Y",
+        "SET_META_DESCRIPTION" => "Y",
+        "SET_LAST_MODIFIED" => "N",
+        "USE_MAIN_ELEMENT_SECTION" => "N",
+        "CONVERT_CURRENCY" => "N",
+        "ADD_PROPERTIES_TO_BASKET" => "Y",
+        "PARTIAL_PRODUCT_PROPERTIES" => "N",
+        "PAGER_BASE_LINK_ENABLE" => "N",
+        "SHOW_404" => "N",
+        "MESSAGE_404" => ""
+    ),
+    false
 );?>
+
+
+
+
+ <div class="overlay">
+        </div>
+            <a href="#x" class="overlay1" id="big-img"></a> 
+                <div class="popup1"> 
+                   <img src="<?echo $picture?>" width=auto height="500px" alt="<?echo $arResult['LINK_MODEL']['NAME']?>" />
+                
+                    <a class="close" title="Закрыть" href="#close"></a> 
+                </div>
