@@ -2406,7 +2406,7 @@ div.item div.preview {
 }
 div.item div.preview img {
     width: auto;
-    max-height: 300px;
+    height: 300px;
 }
 div.item-info {
 	width: 380px;
