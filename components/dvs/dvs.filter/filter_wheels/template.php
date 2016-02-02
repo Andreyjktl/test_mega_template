@@ -13,7 +13,7 @@
                     </tr>
                     <tr>
                     	<td>
-                              <select id="wp_diameter" style="width:100px;" name="diameter">
+                              <select id="wp_diameter" style="width:80px;" name="diameter">
                             <option value="0">-</option>
                             <?foreach($arResult['WHEELS']['DIAM'] as $key => $value){
                                 if(isset($_REQUEST['diameter'])&&$_REQUEST['diameter']==$key)
@@ -25,7 +25,7 @@
                         </td>
                         <td></td>
                         <td>
-                               <select id="wp_width" style="width:100px;" name="width">
+                               <select id="wp_width" style="width:80px;" name="width">
                             <option value="0">-</option>
                             <?foreach($arResult['WHEELS']['WIDTH'] as $key => $value){
                                 if(isset($_REQUEST['width'])&&$_REQUEST['width']==$key)
@@ -42,7 +42,7 @@
                     </tr>
                      <tr> 
                         <td>      
-                          <select id="wp_apperture"  style="width:100px;" name="aperture">
+                          <select id="wp_apperture"  style="width:80px;" name="aperture">
                             <option value="0">-</option>
                             <?foreach($arResult['WHEELS']['APERTURE'] as $key => $value){
                                 if(isset($_REQUEST['aperture'])&&$_REQUEST['aperture']==$key)
@@ -54,7 +54,7 @@
 	                   </td>
                        <td></td>
                        <td>
-                           <select id="wp_brand"  style="width:100px;" name="brand">
+                           <select id="wp_brand"  style="width:80px;" name="brand">
                             <option value="0">-</option>
                             <?foreach($arResult['WHEELS']['BRAND'] as $key => $value){
                                 if(isset($_REQUEST['brand'])&&$_REQUEST['brand']==$key)

@@ -46,10 +46,10 @@ foreach($arResult["PRICES"] as $code => $arPrice){
 }
 if($iPrice > $iDiscount){
     $price = '<p><span class="strike">'.$iPrice.' <span class="rubl">'.GetMessage("DVS_RUB").'</span></span></p>
-              <p class="price">'.$iDiscount.' <span class="rubl">'.GetMessage("DVS_RUB").'</span> ('.GetMessage("DVS_ONE_TYRES").')</p>';
+              <p class="price">'.round($iDiscount).' <span class="rubl">'.GetMessage("DVS_RUB").'</span> ('.GetMessage("DVS_ONE_TYRES").')</p>';
     $sale = true;
 } else {
-    $price = '<p class="price">'.$iPrice.' <span class="rubl">'.GetMessage("DVS_RUB").'</span> ('.GetMessage("DVS_ONE_TYRES").')</p>';
+    $price = '<p class="price">'.round($iPrice).' <span class="rubl">'.GetMessage("DVS_RUB").'</span> ('.GetMessage("DVS_ONE_TYRES").')</p>';
 }
 
 //кол-во
