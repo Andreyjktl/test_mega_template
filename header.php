@@ -29,12 +29,12 @@
 
 		<div id="panel"><?$APPLICATION->ShowPanel()?></div>
 		<!-- Center -->
-		<div class="top_panel">
+		<div class="top_panel"  style="width: 1000px;">
 		
 		</div>
 
 		<div class="top_nav">
-		<div style="    min-width: 937px; width: 85%; margin: auto;">
+		<div style="width: 1000px; margin: auto;">
 
 		<!-- Navigation -->
 
@@ -72,7 +72,7 @@
 			<div class="bg_nav"></div>
 				<!-- Top Block -->
 				<div class="top-block">
-				<div style="    min-width: 937px;    width: 85%;    margin: auto;">
+				<div style="width: 1000px;     margin: auto;">
 
 					<div class="logo">
 						<?if (CSite::InDir(SITE_DIR.'index.php')) {?>
@@ -145,7 +145,7 @@
 				
 				</div>
 
-					<div class="panel">
+					<div class="panel"  style="width: 1000px; margin: auto;">
 						<div class="panel_inner">
 						<div class="menu">
 							<ul>

@@ -1,4 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
+<?CIBlockElement::GetList(false, array("IBLOCK_ID"=>$iIBLOCK_ID, ">=PRICE_CODE"=>"100")); ?>
 <div class="filter">
     <div class="params_single">
 
@@ -49,10 +50,6 @@
             
                  <tr><td>
 
-
-
-                 
-
                     <table>
                        <tr><td> <?=GetMessage("DVS_SEASON");?></td></tr>
             
@@ -87,7 +84,6 @@
 
                         </td></tr>
 
-                       
                    
                      </table>
 
