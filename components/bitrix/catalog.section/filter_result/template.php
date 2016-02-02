@@ -133,12 +133,13 @@
                 }
 
                 $arImgs[] = '<td>
-                <div><a href="#big-img-'.$img_count.'">
+                <div><a href="'.$arElement['DETAIL_PAGE_URL'].'">
                 <img src="'.$picture.'" width="'.$width.'" height="'.$height.'" alt="'.$arElement['NAME'].'" id="i'.$arElement['ID'].'" /></a>'.$icons.'
-                </div>
+                <p><a href="#big-img-'.$img_count.'"><img src="../images/big-img.png" width="25px" height="25px" style="margin-top:-50px;" alt="Увеличить"></a>
+                        </div>
                      <div class="overlay">
                 </td>
-                                            </div>
+                    </div>
                               <a href="#x" class="overlay1" id="big-img-'.$img_count.'"></a> 
                               <div class="popup1"> 
                                <img src="'.$arElement['DETAIL_PICTURE']['SRC'].'" width=auto height="500px"/>

@@ -2405,8 +2405,8 @@ div.item div.preview {
 	padding-right: 30px;
 }
 div.item div.preview img {
-	max-width: 300px;
-	height: auto;
+    width: auto;
+    max-height: 300px;
 }
 div.item-info {
 	width: 380px;
