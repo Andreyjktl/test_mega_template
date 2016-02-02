@@ -510,9 +510,7 @@ label input {
 
 /* Center */
 div.center {
-	min-width: 937px;
-    width: 85%;
-    /* width: 937px; */
+	width: 1000px;
     margin: 10px auto 0;
     margin-bottom: 20px;
     position: relative;
@@ -648,7 +646,7 @@ div.panel {
 }
 
 div.panel_inner{
-	min-width: 937px;
+	width: 1000px;
     width: 85%;
     margin: auto;
 }
@@ -2404,11 +2402,11 @@ div.item div.preview {
 	width: 300px;
 	float: left;
 	position: relative;
-	padding-right: 20px;
+	padding-right: 30px;
 }
 div.item div.preview img {
-	width: auto;
-	height: 300px;
+	max-width: 300px;
+	height: auto;
 }
 div.item-info {
 	width: 380px;
@@ -3400,7 +3398,7 @@ div.bottom-block-1{
 }
 
 div.bottom-block-1_1{
-	min-width: 937px;
+	width: 1000px;
     width: 85%;
     margin: 10px auto 0;
 }
@@ -3412,7 +3410,7 @@ div.brick_wall_out{
 }
 
 div.brick_wall{
-	min-width: 937px;
+	width: 1000px;
     width: 85%;
     margin: auto;
 	height: 50px;
@@ -3517,7 +3515,7 @@ div.main_news_out{
 
 }
 div.main_news_in{
-min-width: 937px;
+	width: 1000px;
     width: 85%;
     margin: 10px auto 0;
    }
