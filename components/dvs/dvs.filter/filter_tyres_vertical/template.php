@@ -50,42 +50,46 @@
             
                  <tr><td>
 
-                    <table>
-                       <tr><td> <?=GetMessage("DVS_SEASON");?></td></tr>
-            
-                                  
-                    <tr><td> 
-                    <? if(isset($_REQUEST['season'])&&$_REQUEST['season']==leto)
-                          echo '<input checked type="radio" name="season"  value="leto" ><span class="summer">Лето</span>';
-                      else
-                         echo '<input type="radio" name="season"  value="leto" ><span class="summer">Лето</span>';
-                    ?>
+                                        <table>
+                                           <tr><td> <?=GetMessage("DVS_SEASON");?></td></tr>
+                                
+                                                      
+                                        <tr><td> 
+                                        <? if(isset($_REQUEST['season'])&&$_REQUEST['season']==leto)
+                                              echo '<input checked type="radio" name="season"  value="leto" ><span class="summer">Лето</span>';
+                                          else
+                                             echo '<input type="radio" name="season"  value="leto" ><span class="summer">Лето</span>';
+                                        ?>
 
-                     <? if(isset($_REQUEST['season'])&&$_REQUEST['season']==zima)
-                          echo '<input checked type="radio" name="season"  value="zima" ><span class="winter">Зима</span>';
-                      else
-                         echo '<input type="radio" name="season"  value="zima" ><span class="winter">Зима</span>';
-                    ?>
-                    
-                     </td></tr>
-            <tr><td><?=GetMessage("DVS_PIN");?></td></tr> 
-                        <tr><td>  
-                        <? if(isset($_REQUEST['pin'])&&$_REQUEST['pin']==156764)
-                              echo '<input checked type="radio" name="pin"  value="156764" ><span class="pin">Да</span>';
-                          else
-                             echo '<input type="radio" name="pin"  value="156764" ><span class="pin">Да</span>';
-                        ?>
+                                         <? if(isset($_REQUEST['season'])&&$_REQUEST['season']==zima)
+                                              echo '<input checked type="radio" name="season"  value="zima" ><span class="winter">Зима</span>';
+                                          else
+                                             echo '<input type="radio" name="season"  value="zima" ><span class="winter">Зима</span>';
+                                        ?>
+                                        
+                                         </td></tr>
+                                <tr><td><?=GetMessage("DVS_PIN");?></td></tr> 
+                                            <tr><td>  
+                                            <? if(isset($_REQUEST['pin'])&&$_REQUEST['pin']==156764)
+                                                  echo '<input checked type="radio" name="pin"  value="156764" ><span class="pin">Да</span>';
+                                              else
+                                                 echo '<input type="radio" name="pin"  value="156764" ><span class="pin">Да</span>';
+                                            ?>
 
-                        <? if(isset($_REQUEST['pin'])&&$_REQUEST['pin']==156721)
-                              echo '<input checked type="radio" name="pin"  value="156721" ><span class="pin">Нет</span>';
-                          else
-                             echo '<input type="radio" name="pin"  value="156721" ><span class="pin">Нет</span>';
-                        ?>
+                                            <? if(isset($_REQUEST['pin'])&&$_REQUEST['pin']==156721)
+                                                  echo '<input checked type="radio" name="pin"  value="156721" ><span class="pin">Нет</span>';
+                                              else
+                                                 echo '<input type="radio" name="pin"  value="156721" ><span class="pin">Нет</span>';
+                                            ?>
 
-                        </td></tr>
+                                            </td></tr>
 
-                   
-                     </table>
+                                       
+                                         </table>
+
+                                    </td></tr>
+                          
+                                  </table>
 
                 </td></tr>
       
