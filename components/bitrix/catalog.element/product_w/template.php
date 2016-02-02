@@ -94,7 +94,6 @@ if ($sale || $hit) {
 */ ?>
 
 
-
 <? //echo "<pre>";  print_r($arResult); echo "</pre>"; ?>
 <!-- Item Details -->
 <div class="item">
