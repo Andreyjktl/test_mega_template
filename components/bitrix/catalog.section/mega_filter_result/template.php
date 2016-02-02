@@ -151,7 +151,7 @@
                 }
                 
                 $arImgs[] = '<td class="mega_result_image">
-                    <div><a href="#big-img-'.$img_count.'">
+                    <div><a href="'.$arElement['DETAIL_PAGE_URL'].'">
                         <img style="float:right; padding-top:5px; padding-bottom:5px;" src="'.$picture.'" max-width="150px;" max-width="150px;" "width="'.$width.'" height="'.$height.'" alt="'.$arElement['NAME'].'" id="i'.$arElement['ID'].'" /></a>'.$icons.'
                         
                         </div>
